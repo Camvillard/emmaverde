@@ -1,0 +1,52 @@
+/* ----- front page : section beauté ----- */
+
+.front-page-beauty {
+
+  padding: 30px;
+
+    .widget-title {
+      display: none;
+    }
+
+    .featured-content-beaute {
+      max-width: $max-width;
+      margin: auto;
+    }
+
+    article{
+
+      @include grid-column(12, $frontpage-grid);
+
+      @media only screen and (min-width: 1024px) {
+        @include grid-column(4, $frontpage-grid);
+        &:nth-of-type(3n+1){
+          clear: both;
+        }
+
+        .entry-title {
+          @include rem( font-size, $h2--widget-title );
+        }
+
+        .post-info {
+          transform: rotate(90deg);
+          transform-origin: top left;
+          font-style: italic;
+          @include rem( font-size, $post-info--font-size );
+        }
+      }
+
+      .more-link {
+        text-transform: uppercase;
+        color: $more-link-simple--color;
+        float: right;
+        text-decoration: none;
+        padding: 6px 12px;
+
+        &:hover {
+          background: $more-link-simple--hover-background-color;
+          font-style: italic;
+        }
+      }
+
+    }
+}

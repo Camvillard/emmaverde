@@ -1,0 +1,23 @@
+.page-contact-emma {
+
+  background: $rose--clair;
+
+  .entry-title {
+    text-align: center;
+    @include rem( font-size, $template-title--font-size );
+  }
+
+  h3 {
+    font-family: $font-family--secondary;
+    font-weight: $font-weight--thin;
+    text-align: center;
+    @include rem( font-size, $template-text--font-size );
+  }
+
+  .wpcf7 {
+    padding: 30px 80px;
+    border: $border--thick-pink;
+  }
+
+
+}

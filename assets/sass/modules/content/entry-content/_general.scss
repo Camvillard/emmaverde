@@ -1,0 +1,67 @@
+/* ----- single page : général ----- */
+
+
+.single-post {
+
+  .entry-title {
+    @include rem( font-size, $h1--font-size );
+    text-align: center;
+  }
+
+  .entry-meta {
+    font-size: $post-info--font-size;
+    color: $post-info--color;
+    width: 100%;
+    font-style: italic;
+    text-align: right;
+  }
+
+  .entry-categories {
+    display: inline;
+
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $post-info--color;
+    }
+  }
+
+  .entry-content {
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .entry-footer {
+    .entry-meta {
+      text-align: center;
+    }
+
+    .entry-categories {
+        font-family: $font-family--secondary;
+        font-style: normal;
+        @include rem( font-size, $post-meta-title--font-size );
+
+      a {
+        font-family: $font-family--primary;
+        text-transform: uppercase;
+        @include rem( font-size, $post-info--font-size );
+      }
+    }
+
+    .entry-tags {
+        font-family: $font-family--secondary;
+        font-style: normal;
+        @include rem( font-size, $post-meta-title--font-size );
+
+      a {
+        font-family: $font-family--primary;
+        text-transform: uppercase;
+        @include rem( font-size, $post-info--font-size );
+        text-decoration: none;
+        color: $post-info--color;
+      }
+    }
+  }
+
+
+}

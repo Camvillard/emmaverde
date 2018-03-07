@@ -1,0 +1,119 @@
+// Common Fonts
+$font-family--primary: 'Poppins', sans-serif;
+$font-family--secondary: 'Dawning of a New Day', cursive;
+$font-weight--thin: 300;
+$font-weight--normal: 400;
+$font-weight--thick: 500;
+
+// Base Typography
+$html--font-size: 62.5%;
+
+$base--font-family: $font-family--primary;
+$base--font-size: 16px;
+$base--font-weight: $font-weight--thin;
+$base--font-size--small-screen: 14px;
+$base__div--font-size: 1.6rem;
+$base__div--font-size--small-screen: 1.4rem;
+$base--line-height: 1.625;
+
+// Headings
+$headings--font-family: $font-family--primary;
+$headings--line-height: 1.2;
+$headings--font-weight: $font-weight--thick;
+$h1--font-size:  52px;
+$h2--font-size:  46px;
+$h3--font-size:  36px;
+$h4--font-size:  28px;
+$h5--font-size:  26px;
+$h6--font-size:  22px;
+
+//single
+$h1-single--font-size: 36px;
+$h2-single--font-size: 32px;
+$h3-single--font-size: 26px;
+$h4-single--font-size: 34px;
+$h5-single--font-size: 30px;
+$h6-single--font-size: 16px;
+
+$h4-single--font-weight: $font-weight--normal;
+$h5-single--font-weight: $font-weight--normal;
+
+
+// Widgets
+$h2--widget-title: 32px;
+$h2--widget-title-alt: 42px;
+$h2--accent: 36px;
+$h2--accent-font-weight: $font-weight--normal;
+
+
+
+
+// Elements
+$blockquote--font-size: 30px;
+$input--font-size: 18px;
+$button--font-size: 16px;
+$post-info--font-size: 14px;
+$post-meta-title--font-size: 30px;
+
+//
+// Navigation
+//===========
+$nav--font-size: 20px;
+$submenu--font-size: 16px;
+$primary-nav--font-size: 14px;
+$archive-pagination--font-size: 16px;
+
+//
+// Header
+//==================
+$site-title--font-size: 30px;
+$site-description--font-size: 16px;
+
+
+//
+// Footer
+//==================
+$site-footer--font-size: 16px;
+$footer-widgets--font-size: 18px;
+
+//
+// Entry Content
+//===================
+$entry-meta--font-size: 16px;
+$entry-header__entry-meta--font-size: 16px;
+$entry-footer__entry-meta--font-size: 16px;
+
+$entry-title--font-size: 36px;
+
+//
+// Comments
+//===================
+$comments--font-size: 16px;
+
+//
+// Widgets
+//===================
+$widget-title--font-size: 18px;
+$featured-content__entry-title--font-size: 20px;
+
+//
+// Templates
+//===================
+$template-title--font-size: 52px;
+$template-text--font-size: 40px;
+
+
+//
+// Plugins
+//===================
+$enews--font-size: 16px;
+
+//
+// General Components
+//===================
+$breadcrumbs--font-size: 16px;
+$author-box--font-size: 18px;
+$author-box__Title--font-size: 20px;
+$after-entry--font-size: 18px;
+$archive-description--font-size: 18px;
+$archive-title--font-size: 20px;

@@ -1,0 +1,38 @@
+
+/* ----- front page : éléments communs ----- */
+
+
+body.custom-front-page {
+    border: $border--thick-pink;
+
+    .site-inner {
+      max-width: 100%;
+      padding: 0;
+      background: $rose--moyen;
+    }
+
+  .site-inner .wrap {
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+  }
+
+  .entry {
+    padding: 0;
+    margin-bottom: 0;
+  }
+}
+
+.custom-front-page {
+
+  .front-page-titre-secondaire {
+    text-align: center;
+    @include rem( font-size, $h2--widget-title );
+
+    .accent {
+      font-family: $font-family--secondary;
+      font-weight: $h2--accent-font-weight;
+      @include rem( font-size, $h2--accent );
+    }
+  }
+}

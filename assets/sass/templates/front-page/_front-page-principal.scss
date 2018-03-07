@@ -1,0 +1,83 @@
+
+/* ----- front page : section principale ----- */
+
+.front-page-primary {
+  padding: 12px 80px;
+  margin: 60px auto 30px;
+  background: $rose--clair;
+
+  article {
+    max-width: $max-width;
+    margin: auto;
+  }
+
+  .widget-title {
+    display: none;
+  }
+
+  .entry-title {
+    @include rem( font-size, $h2--font-size );
+    text-align: center;
+
+      a {
+        font-weight: $font-weight--thick;
+      }
+
+      a:hover {
+        font-weight: $font-weight--normal;
+      }
+  }
+
+  .post-info {
+    float: left;
+    margin: 16px auto;
+    clear: both;
+  }
+
+  .entry-time {
+    font-style: italic;
+  }
+
+  .entry-categories {
+    display: inline;
+    clear: both;
+    font-style: italic;
+  }
+
+  .more-link {
+    float: right;
+    width: 220px;
+    text-align: center;
+    text-decoration: none;
+    background: $more-link-dark--background-color;
+    color: $more-link-dark--color;
+    border: $more-link-dark--border;
+    text-transform: uppercase;
+    padding: $more-link--padding;
+    font-weight: $font-weight--thick;
+    @include rem( font-size, $more-link--font-size );
+
+      &:hover {
+        background: $more-link-dark--hover-background-color;
+        color: $more-link-dark--hover-color;
+        border: $more-link-dark--hover-border;
+      }
+    }
+}
+
+
+
+
+/*p {
+  text-align: justify;
+  -moz-column-count: 2;
+  -moz-column-gap: 25px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 25px;
+  column-count: 2;
+  column-gap: 25px;
+  float: right;
+  max-width: 740px;
+  margin: auto;
+  clear: both;
+}*/

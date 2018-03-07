@@ -1,0 +1,31 @@
+/* ----- templates particuliers : éléments communs ----- */
+
+.bouton-retour-au-blog {
+  position : fixed;
+  top: 42%;
+  left: 0px;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+
+  a {
+    color: $template-link--color;
+    @include rem( font-size, $template-link--font-size );
+    text-decoration: none;
+    font-weight: $template-link--weight;
+  }
+}
+
+.bouton-contact {
+  position : fixed;
+  top: 42%;
+  right: 0px;
+  text-transform: uppercase;
+  transform: rotate(90deg);
+
+  a {
+    color: $template-link--color;
+    @include rem( font-size, $template-link--font-size );
+    text-decoration: none;
+    font-weight: $template-link--weight;
+  }
+}

@@ -1,0 +1,17 @@
+/* ----- front page : section youtube ----- */
+
+.front-page-youtube {
+  background: $bleu--clair;
+
+  .widget-title {
+    text-align: center;
+    @include rem( font-size, $h2--accent );
+    font-family: $font-family--secondary;
+    font-weight: $font-weight--thin;
+  }
+
+  img {
+    margin: auto;
+  }
+
+}
