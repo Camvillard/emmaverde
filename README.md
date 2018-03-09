@@ -1,7 +1,6 @@
-# Genesis based theme
+# custom theme
 
-This is the very cool theme for the cool emma verde's blog.
-This theme is based on the Genesis Framework, and although I will be super flattered if you like it, this theme is not free for commercial use and it's registered under the CC licenses. If you really want it for your blog, please, just send me an email to talk about it. Please, respect my job !
+This is the very cool theme for the cool emma verde's blog. Although I will be super flattered if you like it, this theme is not free for commercial use and it's registered under the CC licenses. If you really want it for your blog, please, just send me an email to talk about it. Please, respect my job !
 
 
 ## Features
