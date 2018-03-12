@@ -1,0 +1,42 @@
+/* ----- search form : navigation ----- */
+
+.nav-primary {
+
+  .search-form {
+
+      margin-bottom: 40px;
+      width: 200px;
+      float: none;
+      margin: 16px auto;
+
+      @media only screen and (min-width: 1023px) {
+        float: right;
+        margin: 12px auto 0;
+      }
+
+      input {
+          content: "\f179";
+          display: inline-block;
+          -webkit-font-smoothing: antialiased;
+          font: normal 20px/1 'dashicons';
+          vertical-align: top;
+          border: 0px;
+      }
+
+}
+
+  .genesis-nav-menu .search {
+    input[type="submit"] {
+      border: 0;
+      clip: rect(0, 0, 0, 0);
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+  }
+
+
+
+}

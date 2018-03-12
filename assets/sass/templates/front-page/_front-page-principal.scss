@@ -2,13 +2,13 @@
 /* ----- front page : section principale ----- */
 
 .front-page-primary {
-  padding: 12px 80px;
-  margin: 60px auto 30px;
+  padding: $front-page-widget--padding;
+  margin: 200px auto 30px;
   background: $rose--clair;
 
   article {
     max-width: $max-width;
-    margin: auto;
+    margin: -140px auto 0px;
   }
 
   .widget-title {

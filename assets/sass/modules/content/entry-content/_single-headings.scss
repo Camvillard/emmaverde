@@ -1,48 +1,45 @@
 /* ----- single page : titres ----- */
 
-
 .single-post {
+  .entry-content {
 
-  .entry-title {
-    color: $gray;
+    h1 {
+      @include rem( font-size, $h1-single--font-size );
+    }
+
+    h2 {
+      @include rem( font-size, $h2-single--font-size );
+    }
+
+    h3 {
+      @include rem( font-size, $h3-single--font-size );
+      text-transform: uppercase;
+      color: $rose--principal;
+    }
+
+    h4 {
+      @include rem( font-size, $h4-single--font-size );
+      font-family: $font-family--secondary;
+    }
+
+    h5 {
+      @include rem( font-size, $h5-single--font-size );
+      font-family: $font-family--secondary;
+      border-bottom: $border--thin-pink;
+      padding-bottom: 12px;
+      color: $rose--principal;
+    }
+
+    h6 {
+      @include rem( font-size, $h6-single--font-size );
+      font-weight: $font-weight--normal;
+      background: $rose--clair;
+      color: $gray--medium;
+      text-align: center;
+      padding: 12px;
+      width: 80%;
+      margin: 12px auto;
+    }
   }
 
-  h1 {
-    @include rem( font-size, $h1-single--font-size );
-    color: $rose--principal;
-  }
-
-  h2 {
-    @include rem( font-size, $h2-single--font-size );
-  }
-
-  h3 {
-    @include rem( font-size, $h3-single--font-size );
-    text-transform: uppercase;
-    color: $rose--principal;
-  }
-
-  h4 {
-    @include rem( font-size, $h4-single--font-size );
-    font-family: $font-family--secondary;
-  }
-
-  h5 {
-    @include rem( font-size, $h5-single--font-size );
-    font-family: $font-family--secondary;
-    border-bottom: $border--thin-pink;
-    padding-bottom: 12px;
-    color: $rose--principal;
-  }
-
-  h6 {
-    @include rem( font-size, $h6-single--font-size );
-    font-weight: $font-weight--normal;
-    background: $rose--clair;
-    color: $gray--medium;
-    text-align: center;
-    padding: 12px;
-    width: 80%;
-    margin: 12px auto;
-  }
 }

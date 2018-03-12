@@ -41,3 +41,8 @@
     margin-bottom: 5%;
   }
 }
+
+.sidebar .widget-title a {
+  color: $widget-title--link-color;
+  text-decoration: none;
+}

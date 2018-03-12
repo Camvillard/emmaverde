@@ -1,7 +1,8 @@
 /* ----- front page : section youtube ----- */
 
 .front-page-youtube {
-  background: $bleu--clair;
+  background: $background--white-dots;
+  padding: $front-page-widget--padding;
 
   .widget-title {
     text-align: center;

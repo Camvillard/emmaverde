@@ -5,22 +5,14 @@
 
   overflow: hidden;
 
-  .entry-content &,
-  .site-header & {
+  .entry-content & {
     margin-bottom: 40px;
     width: 50%;
   }
 
-  .site-header & {
-    float: right;
-    margin: 12px auto 0;
-
-    @media only screen and (max-width: 1023px) {
-      float: none;
-      margin: 16px auto;
-    }
-  }
 }
+
+
 
 .post-password-form,
 .search-form {
@@ -29,7 +21,6 @@
   }
 }
 
-.genesis-nav-menu .search,
 .widget_search {
   input[type="submit"] {
     border: 0;

@@ -4,11 +4,39 @@
 
 .entry-footer {
   .entry-meta {
+    @include rem( font-size, $entry-footer__entry-meta--font-size );
+    text-align: center;
     border-top: 1px solid $entry-footer__meta--border-color;
     padding-top: 24px;
     margin-bottom: 0;
-    //@include rem( font-size, $entry-footer__entry-meta--font-size );
   }
+
+  .entry-categories {
+      font-family: $font-family--secondary;
+      font-style: normal;
+      @include rem( font-size, $post-meta-title--font-size );
+
+    a {
+      font-family: $font-family--primary;
+      text-transform: uppercase;
+      @include rem( font-size, $post-info--font-size );
+    }
+  }
+
+  .entry-tags {
+      font-family: $font-family--secondary;
+      font-style: normal;
+      @include rem( font-size, $post-meta-title--font-size );
+
+    a {
+      font-family: $font-family--primary;
+      text-transform: uppercase;
+      @include rem( font-size, $post-info--font-size );
+      text-decoration: none;
+      color: $post-info--color;
+    }
+  }
+
 }
 
 .entry-categories,

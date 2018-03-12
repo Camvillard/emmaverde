@@ -15,6 +15,7 @@
 
     article{
       @include grid-column(12, $frontpage-grid);
+      position: relative;
 
       @media only screen and (min-width: 1024px) {
         @include grid-column(4, $frontpage-grid);
@@ -23,10 +24,13 @@
         }
 
         .entry-title {
-          @include rem( font-size, $h2--widget-title );
+          @include rem( font-size, $h2--widget-principal-title );
         }
 
         .post-info {
+          position: absolute;
+          top: 0;
+          left: -8px;
           transform: rotate(90deg);
           transform-origin: top left;
           font-style: italic;

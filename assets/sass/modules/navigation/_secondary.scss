@@ -1,8 +1,28 @@
-//
-// ## Secondary
-//===========================
+/* ----- secondary navigation ----- */
 
-.nav-secondary {
+.menu-secondary {
+  position: fixed;
+  top: 0;
+  z-index: 10000;
   background-color: $secondary-nav--background-color;
-  border-top: 1px solid $secondary-nav--border-color;
+  @include rem( font-size, $secondary-nav--font-size );
+  width: $max-width--fullwidth;
+  float: right;
+
+  li {
+    margin-top: 14px;
+    margin-right: 12px;
+    float: right;
+  }
+
+  a {
+      color: $gray--light;
+      padding: 10px;
+
+      &:hover {
+        background: $rose--principal;
+        color: $white;
+        text-decoration: none;
+      }
+  }
 }

@@ -28,23 +28,22 @@ $h5--font-size:  26px;
 $h6--font-size:  22px;
 
 //single
-$h1-single--font-size: 36px;
+$h1-single--font-size: 40px;
 $h2-single--font-size: 32px;
 $h3-single--font-size: 26px;
 $h4-single--font-size: 34px;
 $h5-single--font-size: 30px;
-$h6-single--font-size: 16px;
+$h6-single--font-size: 20px;
 
 $h4-single--font-weight: $font-weight--normal;
 $h5-single--font-weight: $font-weight--normal;
 
 
 // Widgets
-$h2--widget-title: 32px;
-$h2--widget-title-alt: 42px;
-$h2--accent: 36px;
+$h2--widget-principal-title: 42px;
+$h2--widget-alt-title: 32px;
+$h2--accent: 46px;
 $h2--accent-font-weight: $font-weight--normal;
-
 
 
 
@@ -52,15 +51,15 @@ $h2--accent-font-weight: $font-weight--normal;
 $blockquote--font-size: 30px;
 $input--font-size: 18px;
 $button--font-size: 16px;
-$post-info--font-size: 14px;
+$post-info--font-size: 20px;
 $post-meta-title--font-size: 30px;
 
 //
 // Navigation
 //===========
-$nav--font-size: 20px;
+$primary-nav--font-size: 26px;
 $submenu--font-size: 16px;
-$primary-nav--font-size: 14px;
+$secondary-nav--font-size: 18px;
 $archive-pagination--font-size: 16px;
 
 //
@@ -83,7 +82,7 @@ $entry-meta--font-size: 16px;
 $entry-header__entry-meta--font-size: 16px;
 $entry-footer__entry-meta--font-size: 16px;
 
-$entry-title--font-size: 36px;
+$entry-title--font-size: 62px;
 
 //
 // Comments

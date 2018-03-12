@@ -2,12 +2,12 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .site-footer {
-  background-color: $siteFooter--background-color;
-  border-top: 1px solid $site-footer--border-color;
+  background-color: $site-footer--background-color;
   @include rem( font-size, $site-footer--font-size );
-  line-height: 1;
+  line-height: 1.6;
   padding: 60px 0;
   text-align: center;
+  margin-bottom: 20px;
 
   p {
     margin-bottom: 0;

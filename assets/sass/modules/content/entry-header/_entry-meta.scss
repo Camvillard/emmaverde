@@ -1,11 +1,34 @@
-.entry-header {
-  .entry-meta {
-    margin-bottom: 24px;
-    //@include rem( font-size, $entry-header__entry-meta--font-size );
-  }
-}
+/* ----- single page : général ----- */
 
-.entry-comments-link::before {
-  content: "\2014";
-  margin: 0 6px 0 2px;
+.single-post {
+
+  .entry-header {
+
+    .entry-meta {
+      @include rem( font-size, $post-info--font-size );
+      color: $post-info--color;
+      width: 100%;
+      font-style: italic;
+      text-align: right;
+      margin-bottom: 24px;
+
+    }
+  }
+
+  .entry-categories {
+    display: inline;
+
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $post-info--color;
+    }
+  }
+
+  .entry-comments-link::before {
+    content: "\2014";
+    margin: 0 6px 0 2px;
+  }
+
+
 }

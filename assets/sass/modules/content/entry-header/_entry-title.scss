@@ -4,6 +4,8 @@
 
 .entry-title {
   @include rem( font-size, $entry-title--font-size );
+  color: $gray;
+  text-align: center;
 
   a {
     color: $entry-title--link-color;

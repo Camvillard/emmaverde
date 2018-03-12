@@ -2,12 +2,17 @@
 
 .front-page-travel {
 
-  background: $bleu--clair;
+  background: $background--pink-dots;
+  padding: $front-page-widget--padding;
 
   .featured-content-mon-dernier-voyage {
     max-width: $max-width;
-    //border: $border--thick-gray;
     margin: auto;
+
+    .widget-wrap {
+      background: $rose--clair;
+      padding: $front-page-widgetwrap--padding;
+    }
   }
 
   .widget-title {
@@ -18,9 +23,7 @@
   }
 
   article {
-    padding: 10px 60px;
-    background-color: $rose--clair;
-  // border: $border--thick-pink;
+    margin: 30px auto 0px;
     position: relative;
     z-index: 1000 !important;
 
@@ -31,7 +34,7 @@
       padding: 16px;
       width: 50%;
       z-index: 1000;
-      @include rem( font-size, $h2--widget-title-alt );
+      @include rem( font-size, $h2--widget-principal-title );
       text-align: center;
       text-transform: uppercase;
       font-weight: $font-weight--thick;

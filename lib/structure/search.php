@@ -20,3 +20,15 @@ namespace emmaverde\Structure;
 function unregister_search_events() {
 	// nothing to unregister.
 }
+
+
+add_filter( 'genesis_search_text', __NAMESPACE__ . '\search_button_icon' );
+/**
+ * Add Dashicon to search form button
+ *
+ * @since 1.0.0
+ *
+ */
+function search_button_icon( $text ) {
+	return esc_attr( '&#xf179;' );
+}
