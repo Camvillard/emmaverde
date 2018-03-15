@@ -1,0 +1,28 @@
+/* ----- return to top button ----- */
+
+
+.to-top-button {
+  text-align: center;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  background: $rose-principal;
+  margin: -86px auto 20px;
+  padding-top: 8px;
+
+  @media only screen and (min-height: $screen-size--medium) {
+    width: 54px;
+    height: 54px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $white;
+    @include rem( font-size, $to-top-button--font-size-small);
+
+    @media only screen and (min-height: $screen-size--medium) {
+    @include rem( font-size, $to-top-button--font-size-large);
+    }
+  }
+
+}

@@ -3,14 +3,56 @@
 //========================
 
 .comment-respond {
-  label {
-    display: block;
-    margin-right: 12px;
+
+  .comment-form-comment {
+
+    label {
+      display: block;
+      margin-right: 12px;
+      @include rem( font-size, $comments-placeholder--font-size);
+    }
+
+    textarea {
+      border: none;
+      border-bottom: $border--thin-gray-light;
+      color: $gray-light;
+    }
   }
 
-  input[type="email"],
-  input[type="text"],
+  .comment-form-author,
+  .comment-form-email,
+  .comment-form-url {
+    label {
+      display: none;
+    }
+  }
+
+
+  input[type="text"]{
+    @include grid-column(6);
+    border: none;
+    margin-left: 0px;
+    border-bottom: $border--thin-gray-light;
+    @include rem( font-size, $comments-placeholder--font-size);
+    color: $gray-light;
+  }
+
+
+  input[type="email"] {
+    @include grid-column(6);
+    float: right;
+    border: none;
+    margin-right: 0px;
+    border-bottom: $border--thin-gray-light;
+    @include rem( font-size, $comments-placeholder--font-size);
+    color: $gray-light;
+  }
+
   input[type="url"] {
-    width: 50%;
+    width: 100%;
+    border:none;
+    border-bottom: $border--thin-gray-light;
+    @include rem( font-size, $comments-placeholder--font-size);
+    color: $gray-light;
   }
 }

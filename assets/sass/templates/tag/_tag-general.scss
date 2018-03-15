@@ -1,0 +1,15 @@
+/* ----- archives des étiquettes : généralités ----- */
+
+.tag {
+
+  .archive-title {
+    text-align: center;
+  }
+
+  .archive-description {
+    text-align: center;
+    font-family: $font-family--secondary;
+    @include rem( font-size, $tag-description--font-size);
+  }
+
+}

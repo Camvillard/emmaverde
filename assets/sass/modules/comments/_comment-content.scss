@@ -4,8 +4,28 @@
 
 .comment-content {
   clear: both;
+  margin-left: 75px;
 
   ul > li {
     list-style-type: disc;
   }
+}
+
+.comment-reply {
+    margin-left: 63px;
+    text-transform: uppercase;
+    font-weight: $font-weight--normal;
+    margin-bottom: 18px;
+
+    a {
+      text-decoration: none;
+      color: $gray-medium;
+      padding: 6px 12px;
+
+      &:hover {
+        background: $rose-principal;
+        color: $white;
+        font-style: italic;
+      }
+    }
 }

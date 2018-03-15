@@ -1,0 +1,67 @@
+/* ----- archives des categories : contenu ----- */
+
+.category {
+
+  article {
+
+    @media only screen and (min-width: $screen-size--small) {
+      @include grid-column(6);
+      padding: 10px 12px;
+
+      .entry-header {
+        .entry-meta {
+          text-align: center;
+          font-style: italic;
+          margin-bottom: 2%;
+        }
+
+        .entry-title {
+          @include rem( font-size, $category-title--font-size);
+        }
+      }
+
+      .entry-content {
+
+        .more-link {
+          width: 100%;
+          //float: right;
+          //background: $rose-clair;
+          border-bottom: $border--thin-pink;
+        }
+
+        a.more-link {
+          text-decoration: none;
+          //padding: $more-link-archives--padding;
+          float: right;
+          font-weight: $more-link-archives--weight;
+          text-transform: uppercase;
+          @include rem( font-size, $more-link-archives--font-size);
+          color: $rose-principal;
+
+          &:hover {
+            font-style: italic;
+          }
+        }
+      }
+
+      .entry-footer {
+        .entry-meta {
+          border-top: none;
+          padding-top: 0px;
+        }
+        .entry-tags{
+          text-align: left;
+        }
+      }
+
+    }
+
+    @media only screen and (min-width: $screen-size--medium) {
+      @include grid-column(4);
+      padding: 10px 12px;
+
+    }
+
+  }
+
+}

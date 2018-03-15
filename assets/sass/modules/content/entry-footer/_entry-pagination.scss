@@ -1,0 +1,43 @@
+/* ----- single post : pagination ----- */
+
+.single-entry-pagination {
+  font-family: $font-family--secondary;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: $single-pagination--color;
+    @include rem( font-size, $single-pagination--font-size);
+  }
+
+  .article-pre,
+  .article-suiv {
+      display: inline-block;
+      padding: 4px 38px;
+  }
+}
+
+@media only screen and (min-width: $screen-size--large) {
+
+    .article-pre,
+    .article-suiv {
+        padding: 4px;
+    }
+
+    .article-pre {
+      position: fixed;
+      left: 0;
+      top: 48%;
+      text-align: center;
+      transform: rotate(-90deg);
+    }
+
+    .article-suiv {
+      position: fixed;
+      right: 0;
+      top: 48%;
+      text-align: center;
+      transform: rotate(90deg);
+    }
+
+}

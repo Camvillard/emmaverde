@@ -6,7 +6,8 @@
   .entry-meta {
     @include rem( font-size, $entry-footer__entry-meta--font-size );
     text-align: center;
-    border-top: 1px solid $entry-footer__meta--border-color;
+    border-top: $border--thin-pink;
+    border-bottom: $border--thin-pink;
     padding-top: 24px;
     margin-bottom: 0;
   }

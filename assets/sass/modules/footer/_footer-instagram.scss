@@ -2,6 +2,9 @@
 
 .footer-instagram {
 
+  margin-top: 42px;
+  background: $white;
+
   .widget-title {
     text-align: center;
     @include rem( font-size, $h2--accent );

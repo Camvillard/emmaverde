@@ -29,7 +29,7 @@
     color: $nav--link-color;
     text-decoration: none;
     display: block;
-    padding: 32px 20px;
+    padding: 18px 32px;
   }
 
   a:hover,
@@ -40,6 +40,7 @@
     color: $nav--hover-color;
     text-decoration: underline;
   }
+
 
   .sub-menu {
     border-top: 1px solid $submenu--border-color;

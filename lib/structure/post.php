@@ -48,6 +48,11 @@ add_filter( 'genesis_post_meta', __NAMESPACE__ . '\meta_filter' );
 
 
 
+
+
+
+
+
 add_filter( 'genesis_author_box_gravatar_size', __NAMESPACE__ . '\setup_author_box_gravatar_size' );
 /**
  * Modify size of the Gravatar in the author box.

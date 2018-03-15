@@ -3,12 +3,13 @@
 
 .front-page-primary {
   padding: $front-page-widget--padding;
-  margin: 200px auto 30px;
-  background: $rose--clair;
+  margin: 220px auto 30px;
+  background: $rose-clair;
 
   article {
     max-width: $max-width;
-    margin: -140px auto 0px;
+    margin: -160px auto 0px;
+    background: none;
   }
 
   .widget-title {
@@ -36,12 +37,27 @@
 
   .entry-time {
     font-style: italic;
+    font-weight: $font-weight--thin;
+    color: $gray-light;
   }
 
   .entry-categories {
     display: inline;
     clear: both;
     font-style: italic;
+
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: $font-weight--thin;
+      color: $gray-light;
+
+      &:hover {
+        font-weight: $font-weight--thick;
+        color: $bleu-principal;
+      }
+    }
+
   }
 
   .more-link {

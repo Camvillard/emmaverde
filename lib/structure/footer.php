@@ -39,6 +39,12 @@ function render_footer_widgets() {
 //* Change the footer text
 add_filter('genesis_footer_creds_text', __NAMESPACE__ . '\footer_creds_filter');
 function footer_creds_filter( $creds ) {
-	$creds = '<a href="http://www.camillevillard.com">mentions legales</a> &middot; <a href="http://www.camillevillard.com">soutenir le blog</a></br>[footer_copyright after=" Emma Verde"] &middot; <p class="love">logo, petits dessins et site fabriqués avec <i class="icon ion-heart"></i> par <a href="http://www.camillevillard.com" target="_blank">camille villard</a></p>';
+	$creds = '<a href="http://www.camillevillard.com">mentions legales</a></br>[footer_copyright after=" Emma Verde"] &middot; tous droits réservés</br><p class="love">site imaginé et créé avec <i class="icon ion-heart"></i> par <a href="http://www.camillevillard.com" target="_blank">camille villard</a></p>';
 	return $creds;
+}
+
+// Add To Top button
+add_action( 'genesis_footer', __NAMESPACE__ . '\to_top', 6);
+	function to_top() {
+	 echo '<div class="to-top-button"><a href="#" title="Back To Top">&#9650;</a></div>';
 }

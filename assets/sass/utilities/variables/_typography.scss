@@ -46,7 +46,6 @@ $h2--accent: 46px;
 $h2--accent-font-weight: $font-weight--normal;
 
 
-
 // Elements
 $blockquote--font-size: 30px;
 $input--font-size: 18px;
@@ -60,7 +59,15 @@ $post-meta-title--font-size: 30px;
 $primary-nav--font-size: 26px;
 $submenu--font-size: 16px;
 $secondary-nav--font-size: 18px;
-$archive-pagination--font-size: 16px;
+
+
+//
+// pagination
+//===========
+
+$archive-pagination--font-size: 24px;
+$archive-pagination--weight: $font-weight--thin;
+$archive-pagination--weight-hover: $font-weight--thick;
 
 //
 // Header
@@ -74,6 +81,8 @@ $site-description--font-size: 16px;
 //==================
 $site-footer--font-size: 16px;
 $footer-widgets--font-size: 18px;
+$to-top-button--font-size-small: 28px;
+$to-top-button--font-size-large: 38px;
 
 //
 // Entry Content
@@ -87,7 +96,9 @@ $entry-title--font-size: 62px;
 //
 // Comments
 //===================
-$comments--font-size: 16px;
+$comments--font-size: 22px;
+$comments-placeholder--font-size: 18px;
+$comments-meta--font-size: 30px;
 
 //
 // Widgets
@@ -100,6 +111,13 @@ $featured-content__entry-title--font-size: 20px;
 //===================
 $template-title--font-size: 52px;
 $template-text--font-size: 40px;
+
+$category-description--font-size: 36px;
+$category-title--font-size: 32px;
+
+$tag-description--font-size: 36px;
+$tag-title--font-size: 32px;
+
 
 
 //

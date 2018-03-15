@@ -13,7 +13,18 @@
 
     &:hover {
       font-style: italic;
-      text-decoration: underline;
+      text-decoration: none;
+    }
+  }
+
+  .current-menu-item > a {
+    color: $nav--current-item-color;
+    text-decoration: none;
+    background: $nav--current-item-background-color;
+
+    &:hover,
+    &:focus {
+      font-style:normal;
     }
   }
 

@@ -1,0 +1,15 @@
+/* ----- archives des categories : généralités ----- */
+
+.category {
+
+  .archive-title {
+    text-align: center;
+  }
+
+  .archive-description {
+    text-align: center;
+    font-family: $font-family--secondary;
+    @include rem( font-size, $category-description--font-size);
+  }
+
+}

@@ -3,9 +3,31 @@
 //====================
 
 .comment-header {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  color: $gray-medium;
+  display: inline;
 
   p {
     margin-bottom: 0;
+    display: inline;
   }
+
+  .comment-author {
+    text-transform: uppercase;
+  }
+
+  .comment-meta {
+    margin-bottom: 12px;
+
+    a {
+      font-family: $font-family--secondary;
+      @include rem( font-size, $comments-meta--font-size);
+      text-decoration: none;
+      color: $gray-medium;
+    }
+
+
+  }
+
+
 }

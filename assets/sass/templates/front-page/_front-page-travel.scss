@@ -10,7 +10,7 @@
     margin: auto;
 
     .widget-wrap {
-      background: $rose--clair;
+      background: $rose-clair;
       padding: $front-page-widgetwrap--padding;
     }
   }
@@ -26,6 +26,7 @@
     margin: 30px auto 0px;
     position: relative;
     z-index: 1000 !important;
+    background: none;
 
     .entry-title{
       position: absolute;

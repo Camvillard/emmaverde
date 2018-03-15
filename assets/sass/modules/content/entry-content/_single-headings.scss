@@ -14,7 +14,7 @@
     h3 {
       @include rem( font-size, $h3-single--font-size );
       text-transform: uppercase;
-      color: $rose--principal;
+      color: $rose-principal;
     }
 
     h4 {
@@ -27,14 +27,14 @@
       font-family: $font-family--secondary;
       border-bottom: $border--thin-pink;
       padding-bottom: 12px;
-      color: $rose--principal;
+      color: $rose-principal;
     }
 
     h6 {
       @include rem( font-size, $h6-single--font-size );
       font-weight: $font-weight--normal;
-      background: $rose--clair;
-      color: $gray--medium;
+      background: $rose-clair;
+      color: $gray-medium;
       text-align: center;
       padding: 12px;
       width: 80%;
