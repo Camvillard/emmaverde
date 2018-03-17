@@ -9,6 +9,7 @@ $gray: #2f3035;
 $rose-principal: #ee808a;
 $rose-moyen: #f6beba;
 $rose-clair: #ffeaec;
+$rose-tres-clair: #fff8f9;
 $bleu-principal: #779db6;
 $bleu-moyen: #d1e6f6;
 $bleu-clair: #edf3f7;
@@ -20,7 +21,7 @@ $bleu-clair: #edf3f7;
 //===========================
 
 $link--color: $rose-principal;
-$link--hover-color: $bleu-principal;
+$link--hover-color: $gray-medium;
 
 // Elements
 $base__color: $gray-medium;

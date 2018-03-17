@@ -4,34 +4,69 @@
 
 .page-about-emma {
 
-  background: $rose-clair;
-
-  @media only screen and (min-width: 1024px) {
-      height: 100vh;
-  }
+  background: $rose-tres-clair;
 
   article {
     border: $border--thick-pink;
   }
 
-
-  .about-image {
-    @include grid-column(12);
-      @media only screen and (min-width: 1024px) {
-        @include grid-column(6);
-      }
-  }
-
+  .about-image,
   .about-text {
     @include grid-column(12);
-      @media only screen and (min-width: 1024px) {
-        @include grid-column(6);
-        float: right;
-      }
+  }
 
-      h1 {
-        text-align: center;
-      }
+  .about-text h1 {
+    display: none;
+  }
+
+  // medium screen
+  @media only screen and (min-width: $screen-size--medium) {
+    min-height: 100vh;
+
+    article {
+      max-width: $max-width--medium-screen;
+      margin: auto;
+    }
+
+    .entry-title {
+      display: none;
+    }
+
+    .about-text h1 {
+      display: block;
+      text-align: center;
+    }
+
+    .about-image {
+      @include grid-column(5);
+    }
+
+
+    .about-text {
+      @include grid-column(7);
+      float: right;
+    }
+
+  }
+
+  // desktop
+  @media only screen and (min-width: $screen-size--large) {
+
+    article {
+      max-width: $max-width--large-screen;
+      margin: auto;
+    }
+
+  }
+
+  // huge screens
+  @media only screen and (min-width: $screen-size--big) {
+
+    article {
+      max-width: $max-width--big-screen;
+      margin: auto;
+    }
+
   }
 
 }

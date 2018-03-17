@@ -13,29 +13,37 @@
       margin: auto;
     }
 
-    article{
+
+    article {
+
       @include grid-column(12, $frontpage-grid);
       position: relative;
 
-      @media only screen and (min-width: 1024px) {
+      @media only screen and (min-width: $screen-size--large) {
+
         @include grid-column(4, $frontpage-grid);
-        &:nth-of-type(3n+1){
-          clear: both;
-        }
+          &:nth-of-type(3n+1){
+            clear: both;
+          }
 
-        .entry-title {
-          @include rem( font-size, $h2--widget-principal-title );
-        }
+          .entry-title {
+            @include rem( font-size, $h2--widget-principal-title );
+          }
 
-        .post-info {
-          position: absolute;
-          top: 0;
-          left: -8px;
-          transform: rotate(90deg);
-          transform-origin: top left;
-          font-style: italic;
-          @include rem( font-size, $post-info--font-size );
-        }
+          .post-info {
+            position: absolute;
+            top: 0;
+            left: -8px;
+            transform: rotate(90deg);
+            transform-origin: top left;
+            font-style: italic;
+            @include rem( font-size, $post-info--font-size );
+          }
+      }
+      
+      .post-info {
+        font-style: italic;
+        @include rem( font-size, $post-info--font-size );
       }
 
       .more-link {

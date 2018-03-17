@@ -1,14 +1,13 @@
 /* ## Site Containers
 --------------------------------------------- */
 
-
 .wrap {
   margin: 0 auto;
   max-width: $max-width--fullwidth;
   padding-left: 5%;
   padding-right: 5%;
 
-  @media screen and (min-width: 860px) {
+  @media screen and (min-width: $screen-size--medium) {
     padding-left: 2%;
     padding-right: 2%;
   }
@@ -16,19 +15,25 @@
 }
 
 .site-inner {
-  margin: 0 auto;
+  margin: 100px auto 20px;
   max-width: $max-width;
   clear: both;
   padding-top: 40px;
   word-wrap: break-word;
   padding: 5% 5% 0;
 
-   @media screen and (min-width: 860px) {
+  @media screen and (min-width: $screen-size--medium) {
+   margin: 120px auto 20px;
+   padding: 2% 2% 0;
+ }
+
+   @media screen and (min-width: $screen-size--large) {
+    margin: 140px auto 20px;
     padding: 2% 2% 0;
   }
 }
 
 
 .landing-page .site-inner {
-  max-width: $max-width__landing-page;
+  max-width: $max-width--landing-page;
 }

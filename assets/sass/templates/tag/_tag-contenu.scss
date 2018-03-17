@@ -4,7 +4,7 @@
 
   article {
 
-    @media only screen and (min-width: $screen-size--small) {
+    @media only screen and (min-width: $screen-size--medium) {
       @include grid-column(6);
       padding: 10px 12px;
 
@@ -53,7 +53,7 @@
 
     }
 
-    @media only screen and (min-width: $screen-size--medium) {
+    @media only screen and (min-width: $screen-size--large) {
       @include grid-column(4);
       padding: 10px 12px;
 

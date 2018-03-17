@@ -19,3 +19,18 @@ namespace emmaverde\Structure;
  */
 function unregister_header_events() {
 }
+
+add_action( 'genesis_after_header', __NAMESPACE__ . '\render_social_widget' );
+/**
+ * Renders out the pre-footer.
+ *
+ * @since 1.0.0
+ *
+ * @return void
+ */
+function render_social_widget() {
+ genesis_widget_area( 'header-social', array(
+	 'before' => '<div class="header-social"><div class="wrap">',
+	 'after'  => '</div></div>',
+ ) );
+}

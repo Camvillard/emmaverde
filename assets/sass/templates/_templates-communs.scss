@@ -1,31 +1,70 @@
 /* ----- templates particuliers : éléments communs ----- */
 
 .bouton-retour-au-blog {
-  position : fixed;
-  top: 42%;
-  left: 0px;
+
+  margin: 10px auto;
+  text-align: center;
   text-transform: uppercase;
-  transform: rotate(-90deg);
 
   a {
     color: $template-link--color;
-    @include rem( font-size, $template-link--font-size );
+    @include rem( font-size, $template-link--small-screen-font-size );
     text-decoration: none;
     font-weight: $template-link--weight;
+    padding: $more-link--padding;
+
+      &:hover {
+        border: $border--thick-pink;
+        background: $template-link--hover-background-color;
+      }
   }
+
+  // desktop
+  @media only screen and (min-width: $screen-size--large) {
+    position : fixed;
+    top: 42%;
+    left: -3%;
+    transform: rotate(-90deg);
+    transform-origin: center;
+
+      a {
+        @include rem( font-size, $template-link--large-screen-font-size );
+      }
+  }
+
 }
 
 .bouton-contact {
-  position : fixed;
-  top: 42%;
-  right: 0px;
+
+  margin: 10px auto;
+  text-align: center;
   text-transform: uppercase;
-  transform: rotate(90deg);
 
   a {
     color: $template-link--color;
-    @include rem( font-size, $template-link--font-size );
+    @include rem( font-size, $template-link--small-screen-font-size );
     text-decoration: none;
     font-weight: $template-link--weight;
+    padding: $more-link--padding;
+
+      &:hover {
+        border: $border--thick-pink;
+        background: $template-link--hover-background-color;
+      }
   }
+
+  // desktop
+  @media only screen and (min-width: $screen-size--large) {
+    position : fixed;
+    top: 42%;
+    right: 0;
+    transform: rotate(90deg);
+    transform-origin: center;
+
+      a {
+        @include rem( font-size, $template-link--large-screen-font-size );
+      }
+  }
+
+
 }

@@ -23,7 +23,7 @@ remove_action( 'genesis_after_header', 'genesis_do_subnav' );
 }
 
 // Reposition the primary navigation menu
-add_action( 'genesis_header', 'genesis_do_nav',12 );
+add_action( 'genesis_header', 'genesis_do_nav', 12 );
 add_action( 'genesis_before_header', 'genesis_do_subnav' );
 
 

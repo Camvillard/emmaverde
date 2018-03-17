@@ -10,7 +10,7 @@
   margin: -86px auto 20px;
   padding-top: 8px;
 
-  @media only screen and (min-height: $screen-size--medium) {
+  @media only screen and (min-height: $screen-size--large) {
     width: 54px;
     height: 54px;
   }
@@ -20,7 +20,7 @@
     color: $white;
     @include rem( font-size, $to-top-button--font-size-small);
 
-    @media only screen and (min-height: $screen-size--medium) {
+    @media only screen and (min-height: $screen-size--large) {
     @include rem( font-size, $to-top-button--font-size-large);
     }
   }

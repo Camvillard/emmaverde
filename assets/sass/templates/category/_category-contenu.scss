@@ -4,11 +4,13 @@
 
   article {
 
-    @media only screen and (min-width: $screen-size--small) {
+    @media only screen and (min-width: $screen-size--medium) {
+
       @include grid-column(6);
       padding: 10px 12px;
 
       .entry-header {
+
         .entry-meta {
           text-align: center;
           font-style: italic;
@@ -18,6 +20,7 @@
         .entry-title {
           @include rem( font-size, $category-title--font-size);
         }
+        
       }
 
       .entry-content {
@@ -56,9 +59,14 @@
 
     }
 
-    @media only screen and (min-width: $screen-size--medium) {
+    @media only screen and (min-width: $screen-size--large) {
+
       @include grid-column(4);
       padding: 10px 12px;
+
+        &:nth-of-type(3n+1) {
+          clear: both;
+        }
 
     }
 

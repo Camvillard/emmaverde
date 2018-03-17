@@ -1,23 +1,87 @@
 .page-contact-emma {
 
-  background: $rose-clair;
+  background: $background--pink-dots;
 
-  .entry-title {
-    text-align: center;
-    @include rem( font-size, $template-title--font-size );
+    article {
+      background: none;
+    }
+
+    .entry-title {
+      text-align: center;
+      @include rem( font-size, $template-title--small-screen-font-size );
+    }
+
+    h3 {
+      font-family: $font-family--secondary;
+      font-weight: $font-weight--thin;
+      text-align: center;
+      @include rem( font-size, $template-text--small-screen-font-size );
+    }
+
+    .wpcf7 {
+      background: none;
+      padding: 10px 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      border: $border--thick-pink;
+      color: $gray-light;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      text-transform: uppercase;
+      @include rem( font-size, $template-link--small-screen-font-size );
+    }
+
+    p {
+      text-align: center;
+    }
+
+  // medium screen
+  @media only screen and (min-width: $screen-size--medium) {
+    min-height: 100vh;
+
+    .entry-title {
+      @include rem( font-size, $template-title--medium-screen-font-size );
+    }
+
+    h3 {
+      @include rem( font-size, $template-text--medium-screen-font-size );
+    }
+
+    .wpcf7 {
+      max-width: $max-width--medium-screen;
+    }
+
+    input[type="submit"]{
+      @include rem( font-size, $template-link--medium-screen-font-size );
+    }
+
   }
 
-  h3 {
-    font-family: $font-family--secondary;
-    font-weight: $font-weight--thin;
-    text-align: center;
-    @include rem( font-size, $template-text--font-size );
-  }
+  // desktop
+  @media only screen and (min-width: $screen-size--large) {
 
-  .wpcf7 {
-    padding: 30px 80px;
-    border: $border--thick-pink;
-  }
+    .entry-title {
+      @include rem( font-size, $template-title--large-font-size );
+    }
 
+    h3 {
+      @include rem( font-size, $template-text--large-font-size );
+    }
+
+    .wpcf7 {
+      max-width: $max-width--large-screen;
+      padding: 10px 40px;
+    }
+
+    input[type="submit"] {
+      @include rem( font-size, $template-link--large-screen-font-size );
+    }
+
+  }
 
 }

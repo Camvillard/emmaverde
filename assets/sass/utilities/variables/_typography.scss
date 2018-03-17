@@ -107,10 +107,20 @@ $widget-title--font-size: 18px;
 $featured-content__entry-title--font-size: 20px;
 
 //
-// Templates
+// special templates
 //===================
-$template-title--font-size: 52px;
-$template-text--font-size: 40px;
+$template-title--large-font-size: 54px;
+$template-text--large-font-size: 40px;
+
+$template-title--medium-screen-font-size: 44px;
+$template-text--medium-screen-font-size: 34px;
+
+$template-title--small-screen-font-size: 38px;
+$template-text--small-screen-font-size: 30px;
+
+//
+// taxonomy templates
+//=====================
 
 $category-description--font-size: 36px;
 $category-title--font-size: 32px;

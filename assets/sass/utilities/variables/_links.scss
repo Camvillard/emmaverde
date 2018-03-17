@@ -24,9 +24,18 @@ $more-link-dark--hover-border: $border--thick-pink;
 $more-link-simple--color: $gray;
 $more-link-simple--hover-background-color: $rose-clair;
 
+//
+// special template links
+//=========================
+
 $template-link--color: $gray;
-$template-link--font-size: 32px;
+$template-link--hover-background-color: $white;
+
 $template-link--weight: $font-weight--thick;
+
+$template-link--large-screen-font-size: 34px;
+$template-link--medium-screen-font-size: 28px;
+$template-link--small-screen-font-size: 22px;
 
 
 //

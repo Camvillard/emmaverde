@@ -53,5 +53,11 @@ return array(
 			'description' => __( 'zone de widget pour afficher le feed instagram', 'emmaverde' ),
 		),
 
+		array(
+			'id'          => 'header-social',
+			'name'        => __( 'zone de reseaux sociaux', 'ktc' ),
+			'description' => __( 'zone de widget pour afficher les reseaux sociaux', 'emmaverde' ),
+		),
+
 	),
 );
