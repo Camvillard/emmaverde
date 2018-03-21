@@ -43,8 +43,8 @@ function footer_creds_filter( $creds ) {
 	return $creds;
 }
 
-// Add To Top button
-add_action( 'genesis_footer', __NAMESPACE__ . '\to_top', 6);
-	function to_top() {
-	 echo '<div class="to-top-button"><a href="#" title="Back To Top">&#9650;</a></div>';
-}
+// // Add To Top button
+// add_action( 'genesis_footer', __NAMESPACE__ . '\to_top', 6);
+// 	function to_top() {
+// 	 echo '<div class="to-top-button"><a href="#" title="Back To Top">&#9650;</a></div>';
+// }

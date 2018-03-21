@@ -3,25 +3,26 @@
 .category {
 
   article {
+    @include grid-column(12);
 
-    @media only screen and (min-width: $screen-size--medium) {
+    .entry-header {
+      .entry-meta {
+        text-align: center;
+        font-style: italic;
+        margin-bottom: 2%;
+      }
+      .entry-title {
+        @include rem( font-size, $category-title--font-size);
+      }
+    }
+  }
+}
 
+@media only screen and (min-width: $screen-size--medium) {
+  .category {
+    article {
       @include grid-column(6);
       padding: 10px 12px;
-
-      .entry-header {
-
-        .entry-meta {
-          text-align: center;
-          font-style: italic;
-          margin-bottom: 2%;
-        }
-
-        .entry-title {
-          @include rem( font-size, $category-title--font-size);
-        }
-        
-      }
 
       .entry-content {
 
@@ -56,20 +57,20 @@
           text-align: left;
         }
       }
-
     }
-
-    @media only screen and (min-width: $screen-size--large) {
-
-      @include grid-column(4);
-      padding: 10px 12px;
-
-        &:nth-of-type(3n+1) {
-          clear: both;
-        }
-
-    }
-
   }
+}
 
+@media only screen and (min-width: $screen-size--large) {
+
+  .category {
+    article {
+      @include grid-column(4);
+      //padding: 10px 12px;
+
+        &:nth-of-type(2n+1) {
+          border: $border--thin-pink;
+        }
+    }
+  }
 }
