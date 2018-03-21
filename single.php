@@ -1,17 +1,13 @@
 <?php
 /**
- * Genesis Sample.
  *
- * This file adds the landing page template to the Genesis Sample Theme.
- *
- * Template Name: Landing
- *
- * @package Genesis Sample
+ * @package Emma Verde
  * @author  StudioPress
  * @license GPL-2.0+
  * @link    http://www.studiopress.com/
  */
 
+ namespace emmaverde;
 
 //* Add post navigation (requires HTML5 theme support)
 add_post_type_support( 'post', __NAMESPACE__ . '\prev_next_post_nav' );

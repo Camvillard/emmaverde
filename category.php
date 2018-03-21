@@ -4,7 +4,6 @@
  *
  * @package     KnowTheCode\GoPro
  * @since       2.0.0
- * @author      hellofromTonya
  * @link        https://KnowTheCode.io
  * @license     GPL-2.0+
  */
