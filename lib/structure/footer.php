@@ -39,7 +39,7 @@ function render_footer_widgets() {
 //* Change the footer text
 add_filter('genesis_footer_creds_text', __NAMESPACE__ . '\footer_creds_filter');
 function footer_creds_filter( $creds ) {
-	$creds = '<a href="http://www.camillevillard.com">mentions legales</a></br>[footer_copyright after=" Emma Verde"] &middot; tous droits réservés</br><p class="love">site imaginé et créé avec <i class="icon ion-heart"></i> par <a href="http://www.camillevillard.com" target="_blank">camille villard</a></p>';
+	$creds = '<a href="https://emmaverde.com/mentions-legales">mentions legales</a></br>[footer_copyright after=" Emma Verde"] &middot; tous droits réservés</br><div class="credits-text"><p class="love">site imaginé et créé avec <i class="icon ion-heart"></i> par <a href="https://www.camillevillard.com" target="_blank">camille villard</a></p></div>';
 	return $creds;
 }
 

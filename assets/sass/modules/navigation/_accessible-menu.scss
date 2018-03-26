@@ -17,8 +17,11 @@
 .menu-toggle {
   display: none;
   visibility: hidden;
+}
 
-  @media only screen and (max-width: 1023px) {
+
+@media only screen and (max-width: 1023px) {
+  .sub-menu-toggle {
     border-width: 0;
     background-color: $nav-toggle--background-color;
     color: $nav-toggle--color;
@@ -27,11 +30,6 @@
     overflow: hidden;
     text-align: center;
     visibility: visible;
-  }
-}
-
-@media only screen and (max-width: 1023px) {
-  .sub-menu-toggle {
     float: right;
     padding: 10px;
     position: absolute;
@@ -55,12 +53,20 @@
   }
 
   .menu-toggle {
+    background-color: $nav-toggle--background-color;
+    color: $nav-toggle--color;
+    display: inline;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    visibility: visible;
+    float: right;
     border-top: 1px solid #eee;
     line-height: 20px;
     position: relative;
     right: 0;
     z-index: 1000;
-    width: 100%;
+    width: auto;
 
     .site-header & {
       border: 0;

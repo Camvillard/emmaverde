@@ -2,11 +2,12 @@
 /**
  * archives pour les étiquettes
  *
- * @package     KnowTheCode\GoPro
- * @since       2.0.0
- * @author      hellofromTonya
- * @link        https://KnowTheCode.io
- * @license     GPL-2.0+
+ * @package     Emma Verde
+ * @since       1.0.0
+ * @author      camille villard
+ * @link        https://camillevillard.io
+ * @license     NonCommercial Creative Common Attribution.
+ *
  */
 namespace emmaverde\tag;
 

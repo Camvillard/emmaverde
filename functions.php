@@ -2,11 +2,12 @@
 /**
  * Developer's Theme
  *
- * @package     emmaverde
+ * @package     Emma Verde
  * @since       1.0.0
  * @author      camille villard
  * @link        https://camillevillard.io
- * @license     GNU General Public License 2.0+
+ * @license     NonCommercial Creative Common Attribution.
+ *
  */
 namespace emmaverde;
 

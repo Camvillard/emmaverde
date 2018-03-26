@@ -2,11 +2,14 @@
 /**
  * archives pour les categories
  *
- * @package     KnowTheCode\GoPro
- * @since       2.0.0
- * @link        https://KnowTheCode.io
- * @license     GPL-2.0+
+ * @package     Emma Verde
+ * @since       1.0.0
+ * @author      camille villard
+ * @link        https://camillevillard.io
+ * @license     NonCommercial Creative Common Attribution.
+ *
  */
+
 namespace emmaverde\category;
 
 //remove_action( 'genesis_entry_header', 'genesis_post_info', 9 );

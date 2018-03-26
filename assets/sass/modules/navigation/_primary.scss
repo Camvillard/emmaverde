@@ -3,8 +3,6 @@
 
 .menu-primary {
 
-  float: right;
-
    a {
     text-transform: uppercase;
     @include rem( font-size, $primary-nav--font-size );
@@ -26,6 +24,22 @@
     &:focus {
       font-style:normal;
     }
+  }
+
+}
+
+
+@media only screen and (min-width: $screen-size--large) {
+  .menu-primary {
+    float: right;
+    padding: 14px 2px;
+
+  }
+}
+
+@media only screen and (min-width: $screen-size--big) {
+  .menu-primary {
+      text-align: center;
   }
 
 }

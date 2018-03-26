@@ -4,12 +4,16 @@
 .site-footer {
   background-color: $site-footer--background-color;
   @include rem( font-size, $site-footer--font-size );
-  line-height: 1.6;
+  line-height: 1.8;
   padding: 60px 0;
   text-align: center;
   margin-bottom: 20px;
 
   p {
     margin-bottom: 0;
+  }
+  .credits-text {
+    font-family: $font-family--secondary;
+    @include rem( font-size, $site-footer--credits-font-size );
   }
 }
