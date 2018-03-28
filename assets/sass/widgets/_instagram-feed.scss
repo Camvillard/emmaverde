@@ -2,18 +2,25 @@
 
 .footer-instagram {
 
-  margin-top: 42px;
+  .wrap {
   background: $white;
-
-  .lien-instagram {
-    text-align: center;
-    @include rem( font-size, $h2--accent );
-    font-family: $font-family--secondary;
-    font-weight: $font-weight--thin;
-    a {
-      text-decoration: none;;
-      color: $gray;
-    }
+  padding: 12px 32px;
+  width: 80%;
+  max-width: $max-width--fullwidth;
   }
 
+  .widget-wrap {
+  margin-top: 42px;
+  }
+
+  .lien-instagram {
+  text-align: center;
+  @include rem( font-size, $h2--accent );
+  font-family: $font-family--accent;
+  font-weight: $font-weight--thin;
+    a {
+    text-decoration: none;;
+    color: $gray;
+    }
+  }
 }

@@ -9,7 +9,12 @@ $neat-grid: (
 
 $frontpage-grid: (
   columns: 12,
-  gutter: 60px,
+  gutter: 40px,
+);
+
+$frontpage-mobile-grid: (
+  columns: 8,
+  gutter: 20px,
 );
 
 $category-tags-template-grid: (

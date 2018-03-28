@@ -1,53 +1,67 @@
 /* ----- front page : section travel ----- */
 
 .front-page-travel {
-
-  background: $background--pink-dots;
-  padding: 32px 120px;
+background: $background--pink-dots;
+padding: 32px 120px;
 
   .featured-content-mon-dernier-voyage {
-    max-width: $max-width;
-    margin: auto;
-
+  max-width: $max-width;
+  margin: auto;
     .widget-wrap {
-      background: $rose-clair;
-      padding: 20px 40px;
+    background: $rose-clair;
+    padding: 20px 40px;
     }
   }
 
   .widget-title {
-    text-align: center;
-    @include rem( font-size, $h2--accent );
-    font-family: $font-family--secondary;
-    font-weight: $font-weight--thin;
+  text-align: center;
+  @include rem( font-size, $h2--accent );
+  font-family: $font-family--accent;
+  font-weight: $font-weight--thin;
   }
 
   article {
-    margin: 30px auto 0px;
-    position: relative;
-    z-index: 1000 !important;
-    background: none;
+  margin: 30px auto 0px;
+  position: relative;
+  z-index: 1000 !important;
+  background: none;
+  }
 
-    .entry-title{
-      position: absolute;
-      top: 20%;
-      left: 10%;
-      padding: 16px;
-      width: 80%;
-      z-index: 1000;
-      @include rem( font-size, $widget-travel--mobile--title-font-size );
-      text-align: center;
-      text-transform: uppercase;
-      font-weight: $font-weight--thick;
-      border: $border--thick-gray;
-      background: $white;
-      color: $gray;
-    }
+  .entry-title{
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  padding: 16px;
+  width: 80%;
+  z-index: 1000;
+  @include rem( font-size, $widget-travel--mobile--title-font-size );
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: $font-weight--thick;
+  border: $border--thick-gray;
+  background: $white;
+  color: $gray;
+  }
 
-    .post-info {
-      @include rem( font-size, $widget-frontpage--mobile--postinfo-font-size );
-      font-style: italic;
-      margin-left: 0px !important;
+  a.more-link {
+  clear: both;
+  display: block;
+  margin: 18px auto 12px;
+  width: 100%;
+  text-align: center;
+  background: $more-link-light--background-color;
+  border: $more-link-light--border;
+  color: $more-link-light--color;
+  @include rem( font-size, $widget-travel-more-link--mobile--font-size );
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: $font-weight--normal;
+  padding: $more-link--padding;
+
+    &:hover {
+      background: $more-link-light--hover-background-color;
+      border: $more-link-light--hover-border;
+      color: $more-link-light--hover-color;
     }
   }
 
@@ -96,23 +110,7 @@
         margin-left: 40px;
       }
 
-      .more-link {
-        float: right;
-        background: $more-link-light--background-color;
-        border: $more-link-light--border;
-        color: $more-link-light--color;
-        @include rem( font-size, $widget-travel-more-link--mobile--font-size );
-        text-transform: uppercase;
-        text-decoration: none;
-        font-weight: $more-link--weight;
-        padding: $more-link--padding;
 
-        &:hover {
-          background: $more-link-light--hover-background-color;
-          border: $more-link-light--hover-border;
-          color: $more-link-light--hover-color;
-        }
-      }
 
     }
 

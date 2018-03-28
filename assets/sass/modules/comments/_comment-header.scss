@@ -20,7 +20,7 @@
     margin-bottom: 12px;
 
     a {
-      font-family: $font-family--secondary;
+      font-family: $font-family--accent;
       @include rem( font-size, $comments-meta--font-size);
       text-decoration: none;
       color: $gray-medium;

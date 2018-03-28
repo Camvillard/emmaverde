@@ -13,7 +13,7 @@
     margin-bottom: 0;
   }
   .credits-text {
-    font-family: $font-family--secondary;
+    font-family: $font-family--accent;
     @include rem( font-size, $site-footer--credits-font-size );
   }
 }

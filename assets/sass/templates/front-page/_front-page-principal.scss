@@ -2,93 +2,83 @@
 /* ----- front page : section principale ----- */
 
 .front-page-primary {
-  padding: 32px 80px;
-  margin: 220px auto 30px;
-  background: $rose-clair;
+padding: 32px 80px;
+margin: 220px auto 30px;
+background: $rose-clair;
 
   article {
-    max-width: $max-width;
-    margin: -160px auto 0px;
-    background: none;
+  max-width: $max-width;
+  margin: -160px auto 0px;
+  background: none;
   }
 
   .widget-title {
-    display: none;
+  display: none;
   }
 
-  .entry-title {
-    @include rem( font-size, $widget-principal--mobile--title-font-size );
-    text-align: center;
-    margin-bottom: 46px;
-      a {
-        font-weight: $font-weight--thick;
-      }
-      a:hover {
-        font-weight: $font-weight--normal;
-      }
+  .entry-title a{
+  @include rem( font-size, $widget-principal--mobile--title-font-size );
+  text-align: center;
+  margin-bottom: 46px;
+  font-weight: $font-weight--thick;
+    a:hover {
+    font-weight: $font-weight--normal;
+    }
   }
 
   .post-meta {
-    text-align: left;
-    margin: 16px auto;
-    clear: both;
-    @include rem( font-size, $widget-frontpage--mobile--postinfo-font-size);
-    color: $gray-light;
-  }
-
-  .entry-time {
-    font-style: italic;
-    font-weight: $font-weight--thin;
-    color: $gray-light;
+  text-align: left;
+  margin: 16px auto;
+  clear: both;
   }
 
   .entry-categories {
-    display: inline;
-    clear: both;
-    font-style: italic;
-
+  display: inline;
+  clear: both;
     a {
-      text-transform: uppercase;
-      text-decoration: none;
-      font-weight: $font-weight--thin;
-      color: $gray-light;
-
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: $font-weight--thin;
+    color: $gray-light;
       &:hover {
-        font-weight: $font-weight--thick;
-        color: $bleu-principal;
+      font-weight: $font-weight--thick;
+      color: $bleu-principal;
       }
     }
-
   }
 
-  .more-link {
-    float: right;
-    width: 220px;
-    text-align: center;
-    text-decoration: none;
-    background: $more-link-dark--background-color;
-    color: $more-link-dark--color;
-    border: $more-link-dark--border;
-    text-transform: uppercase;
-    padding: $more-link--padding;
-    font-weight: $font-weight--thick;
-    @include rem( font-size, $widget-principal-more-link--mobile--font-size );
-
-      &:hover {
-        background: $more-link-dark--hover-background-color;
-        color: $more-link-dark--hover-color;
-        border: $more-link-dark--hover-border;
-      }
+  a.more-link {
+  clear: both;
+  display: block;
+  margin: 18px auto 12px;
+  width: 220px;
+  text-align: center;
+  text-decoration: none;
+  background: $more-link-dark--background-color;
+  color: $more-link-dark--color;
+  border: $more-link-dark--border;
+  text-transform: uppercase;
+  padding: $more-link--padding;
+  font-weight: $font-weight--thick;
+  @include rem( font-size, $widget-principal-more-link--mobile--font-size );
+    &:hover {
+    background: $more-link-dark--hover-background-color;
+    color: $more-link-dark--hover-color;
+    border: $more-link-dark--hover-border;
     }
+  }
+
 
 @media screen and (min-width: $screen-size--medium) {
   padding: 32px 120px;
   margin: 180px auto 30px;
 
-  .entry-title {
+  .entry-title a{
     @include rem( font-size, $widget-principal--tablet--title-font-size );
   }
-  .more-link {
+  a.more-link {
+    margin: 32px auto 12px;
+    float: right;
     @include rem( font-size, $widget-principal-more-link--tablet--font-size );
   }
 
@@ -98,18 +88,15 @@
   padding: 32px 120px;
   margin: 180px auto 30px;
 
-  .entry-title {
+  .entry-title a{
     @include rem( font-size, $widget-principal--desktop--title-font-size );
   }
-  .more-link {
+  a.more-link {
+
     @include rem( font-size, $widget-principal-more-link--desktop--font-size );
   }
 
 }
-
-
-
-
 
 
 }

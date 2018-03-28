@@ -19,25 +19,23 @@
 
     h4 {
       @include rem( font-size, $h4-single--font-size );
-      font-family: $font-family--secondary;
-    }
-
-    h5 {
-      @include rem( font-size, $h5-single--font-size );
-      font-family: $font-family--secondary;
+      font-family: $font-family--accent;
       padding-bottom: 12px;
       color: $rose-principal;
     }
 
+    h5 {
+      @include rem( font-size, $h5-single--font-size );
+      font-style: italic;
+      font-weight: $font-weight--normal;
+      font-family: $font-family--secondary;
+    }
+
     h6 {
       @include rem( font-size, $h6-single--font-size );
+      font-family: $font-family--mono;
       font-weight: $font-weight--normal;
-      background: $rose-clair;
       color: $gray-medium;
-      text-align: center;
-      padding: 12px;
-      width: 80%;
-      margin: 12px auto;
     }
   }
 

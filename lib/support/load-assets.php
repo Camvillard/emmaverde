@@ -20,7 +20,7 @@ add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_assets' );
  */
 function enqueue_assets() {
 
-	wp_enqueue_style( CHILD_TEXT_DOMAIN . '-fonts', '//fonts.googleapis.com/css?family=Dawning+of+a+New+Day|Poppins:300,300i,500,500i&amp;subset=latin-ext', array(), CHILD_THEME_VERSION );
+	wp_enqueue_style( CHILD_TEXT_DOMAIN . '-fonts', '//fonts.googleapis.com/css?family=Dawning+of+a+New+Day|Inconsolata:400|Poppins:300,300i,500,500i&amp;subset=latin-ext', array(), CHILD_THEME_VERSION );
 	wp_enqueue_style( 'dashicons' );
 
 	wp_enqueue_script( CHILD_TEXT_DOMAIN . '-responsive-menu', CHILD_URL . '/assets/js/responsive-menu.js', array( 'jquery' ), CHILD_THEME_VERSION, true );

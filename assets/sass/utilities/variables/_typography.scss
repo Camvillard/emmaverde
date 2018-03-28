@@ -1,6 +1,8 @@
 // Common Fonts
 $font-family--primary: 'Poppins', sans-serif;
-$font-family--secondary: 'Dawning of a New Day', cursive;
+$font-family--accent: 'Dawning of a New Day', cursive;
+$font-family--secondary: 'Roboto', sans-serif;
+$font-family--mono: 'Courier New', monospace;
 $font-weight--thin: 300;
 $font-weight--normal: 400;
 $font-weight--thick: 500;
@@ -31,37 +33,37 @@ $h6--font-size:  22px;
 $h1-single--font-size: 40px;
 $h2-single--font-size: 32px;
 $h3-single--font-size: 26px;
-$h4-single--font-size: 34px;
-$h5-single--font-size: 30px;
-$h6-single--font-size: 20px;
+$h4-single--font-size: 42px;
+$h5-single--font-size: 22px;
+$h6-single--font-size: 22px;
 
 $h4-single--font-weight: $font-weight--normal;
 $h5-single--font-weight: $font-weight--normal;
 
-$widget-frontpage--mobile--postinfo-font-size: 22px;
-$widget-frontpage--tablet--postinfo-font-size: 30px;
-$widget-frontpage--desktop--postinfo-font-size: 30px;
+$widget-frontpage--mobile--postinfo-font-size: 18px;
+$widget-frontpage--tablet--postinfo-font-size: 22px;
+$widget-frontpage--desktop--postinfo-font-size: 22px;
 
 
 // Widgets front page : article à la une
 
-$widget-principal--mobile--title-font-size: 32px;
-$widget-principal--tablet--title-font-size: 50px;
+$widget-principal--mobile--title-font-size: 42px;
+$widget-principal--tablet--title-font-size: 52px;
 $widget-principal--desktop--title-font-size: 62px;
 
 $widget-principal--mobile--content-font-size: 30px;
 $widget-principal--tablet--content-font-size: 30px;
 $widget-principal--desktop--content-font-size: 30px;
 
-$widget-principal-more-link--mobile--font-size: 22px;
-$widget-principal-more-link--tablet--font-size: 32px;
+$widget-principal-more-link--mobile--font-size: 28px;
+$widget-principal-more-link--tablet--font-size: 28px;
 $widget-principal-more-link--desktop--font-size: 32px;
 
 // Widgets front page : vignettes
 
-$widget-secondary--mobile--title-font-size: 30px;
-$widget-secondary--tablet--title-font-size: 30px;
-$widget-secondary--desktop--title-font-size: 30px;
+$widget-secondary--mobile--title-font-size: 38px;
+$widget-secondary--tablet--title-font-size: 42px;
+$widget-secondary--desktop--title-font-size: 46px;
 
 $widget-secondary--mobile--content-font-size: 30px;
 $widget-secondary--tablet--content-font-size: 30px;

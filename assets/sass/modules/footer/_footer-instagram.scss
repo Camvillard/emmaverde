@@ -8,7 +8,7 @@
   .widget-title {
     text-align: center;
     @include rem( font-size, $h2--accent );
-    font-family: $font-family--secondary;
+    font-family: $font-family--accent;
     font-weight: $font-weight--thin;
   }
 
