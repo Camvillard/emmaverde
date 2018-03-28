@@ -2,24 +2,24 @@
 /* ----- front page : éléments communs ----- */
 
 
+
 body.custom-front-page {
-
-    .site-inner {
-      max-width: 100%;
-      padding: 0;
-      background: $rose-moyen;
-    }
-
-  .site-inner .wrap {
-    max-width: 100%;
-    width: 100%;
-    padding: 0;
+  .site-inner {
+    max-width: $max-width--fullwidth;
+    margin: auto;
+    padding: 0px;
+    background: $rose-moyen;
   }
-
-  .entry {
-    padding: 0;
-    margin-bottom: 0;
-  }
+  .wrap {
+   max-width: $max-width--fullwidth;
+   // width: 100%;
+   padding: 0px;
+   margin: auto;
+ }
+   .entry {
+     padding: 0;
+     margin-bottom: 0;
+   }
 }
 
 .custom-front-page {
@@ -35,3 +35,10 @@ body.custom-front-page {
     }
   }
 }
+
+
+// @media only screen and (min-width : $screen-size--medium) {
+// }
+//
+// @media only screen and (min-width : $screen-size--large) {
+// }

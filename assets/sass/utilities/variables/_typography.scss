@@ -38,8 +38,67 @@ $h6-single--font-size: 20px;
 $h4-single--font-weight: $font-weight--normal;
 $h5-single--font-weight: $font-weight--normal;
 
+$widget-frontpage--mobile--postinfo-font-size: 22px;
+$widget-frontpage--tablet--postinfo-font-size: 30px;
+$widget-frontpage--desktop--postinfo-font-size: 30px;
 
-// Widgets
+
+// Widgets front page : article à la une
+
+$widget-principal--mobile--title-font-size: 32px;
+$widget-principal--tablet--title-font-size: 50px;
+$widget-principal--desktop--title-font-size: 62px;
+
+$widget-principal--mobile--content-font-size: 30px;
+$widget-principal--tablet--content-font-size: 30px;
+$widget-principal--desktop--content-font-size: 30px;
+
+$widget-principal-more-link--mobile--font-size: 22px;
+$widget-principal-more-link--tablet--font-size: 32px;
+$widget-principal-more-link--desktop--font-size: 32px;
+
+// Widgets front page : vignettes
+
+$widget-secondary--mobile--title-font-size: 30px;
+$widget-secondary--tablet--title-font-size: 30px;
+$widget-secondary--desktop--title-font-size: 30px;
+
+$widget-secondary--mobile--content-font-size: 30px;
+$widget-secondary--tablet--content-font-size: 30px;
+$widget-secondary--desktop--content-font-size: 30px;
+
+$widget-secondary-more-link--mobile--font-size: 32px;
+$widget-secondary-more-link--tablet--font-size: 32px;
+$widget-secondary-more-link--desktop--font-size: 32px;
+
+// Widgets front page : travel
+
+$widget-travel--mobile--title-font-size: 30px;
+$widget-travel--tablet--title-font-size: 30px;
+$widget-travel--desktop--title-font-size: 30px;
+
+$widget-travel--mobile--content-font-size: 30px;
+$widget-travel--tablet--content-font-size: 30px;
+$widget-travel--desktop--content-font-size: 30px;
+
+$widget-travel-more-link--mobile--font-size: 32px;
+$widget-travel-more-link--tablet--font-size: 32px;
+$widget-travel-more-link--desktop--font-size: 32px;
+
+// Widgets front page : vignettes
+
+$widget-youtube--mobile--title-font-size: 30px;
+$widget-youtube--tablet--title-font-size: 30px;
+$widget-youtube--desktop--title-font-size: 30px;
+
+$widget-youtube--mobile--content-font-size: 30px;
+$widget-youtube--tablet--content-font-size: 30px;
+$widget-youtube--desktop--content-font-size: 30px;
+
+$widget-youtube-more-link--mobile--font-size: 32px;
+$widget-youtube-more-link--tablet--font-size: 32px;
+$widget-youtube-more-link--desktop--font-size: 32px;
+
 $h2--widget-principal-title: 42px;
 $h2--widget-alt-title: 32px;
 $h2--accent: 46px;

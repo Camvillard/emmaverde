@@ -25,7 +25,6 @@
     h5 {
       @include rem( font-size, $h5-single--font-size );
       font-family: $font-family--secondary;
-      //border-bottom: $border--thin-pink;
       padding-bottom: 12px;
       color: $rose-principal;
     }

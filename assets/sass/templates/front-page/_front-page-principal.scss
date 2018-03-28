@@ -2,7 +2,7 @@
 /* ----- front page : section principale ----- */
 
 .front-page-primary {
-  padding: $front-page-widget--padding;
+  padding: 32px 80px;
   margin: 220px auto 30px;
   background: $rose-clair;
 
@@ -17,22 +17,23 @@
   }
 
   .entry-title {
-    @include rem( font-size, $h2--font-size );
+    @include rem( font-size, $widget-principal--mobile--title-font-size );
     text-align: center;
-
+    margin-bottom: 46px;
       a {
         font-weight: $font-weight--thick;
       }
-
       a:hover {
         font-weight: $font-weight--normal;
       }
   }
 
-  .post-info {
-    float: left;
+  .post-meta {
+    text-align: left;
     margin: 16px auto;
     clear: both;
+    @include rem( font-size, $widget-frontpage--mobile--postinfo-font-size);
+    color: $gray-light;
   }
 
   .entry-time {
@@ -71,7 +72,7 @@
     text-transform: uppercase;
     padding: $more-link--padding;
     font-weight: $font-weight--thick;
-    @include rem( font-size, $more-link--font-size );
+    @include rem( font-size, $widget-principal-more-link--mobile--font-size );
 
       &:hover {
         background: $more-link-dark--hover-background-color;
@@ -79,6 +80,38 @@
         border: $more-link-dark--hover-border;
       }
     }
+
+@media screen and (min-width: $screen-size--medium) {
+  padding: 32px 120px;
+  margin: 180px auto 30px;
+
+  .entry-title {
+    @include rem( font-size, $widget-principal--tablet--title-font-size );
+  }
+  .more-link {
+    @include rem( font-size, $widget-principal-more-link--tablet--font-size );
+  }
+
+}
+
+@media screen and (min-width: $screen-size--larger) {
+  padding: 32px 120px;
+  margin: 180px auto 30px;
+
+  .entry-title {
+    @include rem( font-size, $widget-principal--desktop--title-font-size );
+  }
+  .more-link {
+    @include rem( font-size, $widget-principal-more-link--desktop--font-size );
+  }
+
+}
+
+
+
+
+
+
 }
 
 

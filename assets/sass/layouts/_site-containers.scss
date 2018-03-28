@@ -6,34 +6,43 @@
   max-width: $max-width--fullwidth;
   padding-left: 5%;
   padding-right: 5%;
-
-  @media screen and (min-width: $screen-size--medium) {
-    padding-left: 2%;
-    padding-right: 2%;
-  }
-
 }
 
 .site-inner {
   margin: 60px auto 20px;
-  max-width: $max-width;
+  max-width: $max-width--responsive;
   clear: both;
   padding-top: 40px;
   word-wrap: break-word;
   padding: 5% 5% 0;
-
-  @media screen and (min-width: $screen-size--medium) {
-   margin: 60px auto 20px;
-   padding: 2% 2% 0;
- }
-
-   @media screen and (min-width: $screen-size--large) {
-    margin: 50px auto 20px;
-    padding: 2% 2% 0;
-  }
 }
-
 
 .landing-page .site-inner {
   max-width: $max-width--landing-page;
+}
+
+
+@media screen and (min-width: $screen-size--medium) {
+  .wrap {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .site-inner {
+    margin: 60px auto 20px;
+    padding: 5% 2% 0;
+  }
+}
+
+@media screen and (min-width: $screen-size--larger) {
+    .site-inner {
+      max-width: $max-width;
+      margin: auto;
+      padding: 5% 0% 0;
+    }
+    .wrap {
+      max-width: $max-width;
+      margin: auto;
+      padding-left: 1%;
+      padding-right: 1%;
+    }
 }

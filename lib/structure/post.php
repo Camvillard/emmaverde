@@ -25,7 +25,7 @@ function unregister_post_events() {
 
 
 //  displays the featured image
-add_action( 'genesis_entry_header', __NAMESPACE__ . '\featured_post_image', 12 );
+//add_action( 'genesis_entry_header', __NAMESPACE__ . '\featured_post_image', 12 );
 	function featured_post_image() {
 		the_post_thumbnail('blog-featured');
 	}

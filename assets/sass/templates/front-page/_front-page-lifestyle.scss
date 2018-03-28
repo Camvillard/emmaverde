@@ -13,35 +13,13 @@
       margin: auto;
     }
 
-
     article {
 
       @include grid-column(12, $frontpage-grid);
       position: relative;
 
-      @media only screen and (min-width: $screen-size--large) {
-
-        @include grid-column(4, $frontpage-grid);
-          &:nth-of-type(3n+1){
-            clear: both;
-          }
-
-          .entry-title {
-            @include rem( font-size, $h2--widget-principal-title );
-          }
-
-          .post-info {
-            position: absolute;
-            top: 0;
-            left: -8px;
-            transform: rotate(90deg);
-            transform-origin: top left;
-            font-style: italic;
-            @include rem( font-size, $post-info--font-size );
-          }
-      }
-      
       .post-info {
+        text-align: center;
         font-style: italic;
         @include rem( font-size, $post-info--font-size );
       }
@@ -61,3 +39,43 @@
     }
 
 }
+
+
+// @media screen and (min-width: $screen-size--medium) {
+//
+// }
+
+@media screen and (min-width: $screen-size--large) {
+
+  .front-page-lifestyle {
+    article {
+      @include grid-column(4, $frontpage-grid);
+
+        &:nth-of-type(3n+1){
+          clear: both;
+        }
+        .entry-title {
+          @include rem( font-size, $h2--widget-principal-title );
+        }
+
+        .post-info {
+          text-align: left;
+          position: absolute;
+          top: 0;
+          left: -8px;
+          transform: rotate(90deg);
+          transform-origin: top left;
+          font-style: italic;
+          @include rem( font-size, $post-info--font-size );
+        }
+    }
+
+  }
+
+
+
+}
+//
+// @media only screen and (min-width: $screen-size--larger) {
+//
+// }

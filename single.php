@@ -13,7 +13,7 @@
 
 //* Add post navigation (requires HTML5 theme support)
 add_post_type_support( 'post', __NAMESPACE__ . '\prev_next_post_nav' );
-add_action( 'genesis_after_entry_content', __NAMESPACE__ . '\prev_next_post_nav', 8 );
+add_action( 'genesis_entry_footer', __NAMESPACE__ . '\prev_next_post_nav', 12 );
 
 function prev_next_post_nav() {
 

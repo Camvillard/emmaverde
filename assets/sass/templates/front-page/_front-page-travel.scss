@@ -3,7 +3,7 @@
 .front-page-travel {
 
   background: $background--pink-dots;
-  padding: $front-page-widget--padding;
+  padding: 32px 120px;
 
   .featured-content-mon-dernier-voyage {
     max-width: $max-width;
@@ -11,7 +11,7 @@
 
     .widget-wrap {
       background: $rose-clair;
-      padding: $front-page-widgetwrap--padding;
+      padding: 20px 40px;
     }
   }
 
@@ -30,57 +30,93 @@
 
     .entry-title{
       position: absolute;
-      top: 30%;
-      left: 25%;
+      top: 20%;
+      left: 10%;
       padding: 16px;
-      width: 50%;
+      width: 80%;
       z-index: 1000;
-      @include rem( font-size, $h2--widget-principal-title );
+      @include rem( font-size, $widget-travel--mobile--title-font-size );
       text-align: center;
       text-transform: uppercase;
       font-weight: $font-weight--thick;
       border: $border--thick-gray;
       background: $white;
       color: $gray;
-
     }
 
     .post-info {
-      @include rem( font-size, $post-info--font-size );
+      @include rem( font-size, $widget-frontpage--mobile--postinfo-font-size );
       font-style: italic;
       margin-left: 0px !important;
     }
-
-    p {
-      @include grid-column(8);
-      float: right;
-      clear: both;
-      margin-right: 40px;
-      margin-left: 40px;
-    }
-
-    .more-link {
-      float: right;
-      background: $more-link-light--background-color;
-      border: $more-link-light--border;
-      color: $more-link-light--color;
-      @include rem( font-size, $more-link--font-size );
-      text-transform: uppercase;
-      text-decoration: none;
-      font-weight: $more-link--weight;
-      padding: $more-link--padding;
-
-      &:hover {
-        background: $more-link-light--hover-background-color;
-        border: $more-link-light--hover-border;
-        color: $more-link-light--hover-color;
-      }
-    }
-
   }
 
 
 
 
+
+  // @media only screen and (min-width : $screen-size--medium) {
+  // }
+  //
+  @media only screen and (min-width : $screen-size--large) {
+    article {
+      margin: 30px auto 0px;
+      position: relative;
+      z-index: 1000 !important;
+      background: none;
+
+      .entry-title{
+        position: absolute;
+        top: 30%;
+        left: 25%;
+        padding: 16px;
+        width: 50%;
+        z-index: 1000;
+        @include rem( font-size, $h2--widget-principal-title );
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: $font-weight--thick;
+        border: $border--thick-gray;
+        background: $white;
+        color: $gray;
+
+      }
+
+      .post-info {
+        @include rem( font-size, $post-info--font-size );
+        font-style: italic;
+        margin-left: 0px !important;
+      }
+
+      p {
+        @include grid-column(8);
+        float: right;
+        clear: both;
+        margin-right: 40px;
+        margin-left: 40px;
+      }
+
+      .more-link {
+        float: right;
+        background: $more-link-light--background-color;
+        border: $more-link-light--border;
+        color: $more-link-light--color;
+        @include rem( font-size, $widget-travel-more-link--mobile--font-size );
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: $more-link--weight;
+        padding: $more-link--padding;
+
+        &:hover {
+          background: $more-link-light--hover-background-color;
+          border: $more-link-light--hover-border;
+          color: $more-link-light--hover-color;
+        }
+      }
+
+    }
+
+
+  }
 
 }
