@@ -1,13 +1,13 @@
 /* ----- front page : section beauté ----- */
 
 .front-page-beauty {
-  padding: 30px;
+padding: 22px 60px;
 
   .widget-title {
   display: none;
   }
 
-  .featured-content-beaute {
+  .featured-content-lifestyle {
   max-width: $max-width;
   margin: auto;
   }
@@ -32,6 +32,7 @@
       }
     }
   }
+
 
   @media screen and (min-width: $screen-size--small) and (max-width: 1023px) {
     a.aligncenter{
@@ -62,8 +63,9 @@
     }
   }
 
-  @media screen and (min-width: $screen-size--large) {
 
+  @media screen and (min-width: $screen-size--large) {
+    padding: 42px 100px;
     a.aligncenter{
       display: block;
       margin: 0 auto;
@@ -100,4 +102,5 @@
       }
     }
   }
+
 }

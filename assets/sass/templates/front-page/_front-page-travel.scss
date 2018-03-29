@@ -2,14 +2,14 @@
 
 .front-page-travel {
 background: $background--pink-dots;
-padding: 32px 120px;
+padding: 22px 60px;
 
   .featured-content-mon-dernier-voyage {
   max-width: $max-width;
   margin: auto;
     .widget-wrap {
     background: $rose-clair;
-    padding: 20px 40px;
+    padding: 20px 60px;
     }
   }
 
@@ -66,18 +66,19 @@ padding: 32px 120px;
   }
 
 
+  @media only screen and (min-width : $screen-size--medium) {
+  padding: 32px 80px;
+  }
 
-
-
-  // @media only screen and (min-width : $screen-size--medium) {
-  // }
-  //
   @media only screen and (min-width : $screen-size--large) {
+  padding: 42px 100px;
+
     article {
       margin: 30px auto 0px;
       position: relative;
       z-index: 1000 !important;
       background: none;
+      padding: 12px 40px !important;
 
       .entry-title{
         position: absolute;

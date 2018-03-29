@@ -1,7 +1,7 @@
 /* ----- front page : section lifestyle ----- */
 
 .front-page-lifestyle {
-padding: 30px;
+padding: 22px 60px;
 
   .widget-title {
   display: none;
@@ -60,31 +60,16 @@ padding: 30px;
       p {
       @include grid-column(5, $frontpage-mobile-grid);
       }
-      // a.more-link {
-      // display: block;
-      // clear: both;
-      // text-align: left;
-      // width: 100%;
-      // text-transform: uppercase;
-      // color: $more-link-simple--color;
-      // float: right;
-      // text-decoration: none;
-      // padding: 6px 12px;
-      // margin: 24px auto 38px;
-      //   &:hover {
-      //   background: $more-link-simple--hover-background-color;
-      //   font-style: italic;
-      //   }
-      // }
     }
   }
 
 
   @media screen and (min-width: $screen-size--large) {
+  padding: 42px 100px;
 
     a.aligncenter{
-      display: block;
-      margin: 0 auto;
+    display: block;
+    margin: 0 auto;
     }
 
     article {

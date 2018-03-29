@@ -2,7 +2,7 @@
 /* ----- front page : section principale ----- */
 
 .front-page-primary {
-padding: 32px 80px;
+padding: 22px 60px;
 margin: 220px auto 30px;
 background: $rose-clair;
 
@@ -69,36 +69,29 @@ background: $rose-clair;
   }
 
 
-@media screen and (min-width: $screen-size--medium) {
-  padding: 32px 120px;
+  @media screen and (min-width: $screen-size--medium) {
+  padding: 32px 80px;
   margin: 180px auto 30px;
-
-  .entry-title a{
+    .entry-title a{
     @include rem( font-size, $widget-principal--tablet--title-font-size );
-  }
-  a.more-link {
+    }
+    a.more-link {
     margin: 32px auto 12px;
     float: right;
     @include rem( font-size, $widget-principal-more-link--tablet--font-size );
+    }
   }
 
-}
-
-@media screen and (min-width: $screen-size--larger) {
-  padding: 32px 120px;
+  @media screen and (min-width: $screen-size--large) {
+  padding: 42px 100px;
   margin: 180px auto 30px;
-
-  .entry-title a{
+    .entry-title a{
     @include rem( font-size, $widget-principal--desktop--title-font-size );
-  }
-  a.more-link {
-
+    }
+    a.more-link {
     @include rem( font-size, $widget-principal-more-link--desktop--font-size );
+    }
   }
-
-}
-
-
 }
 
 
