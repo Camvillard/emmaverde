@@ -17,6 +17,12 @@ remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
 
 add_action( 'genesis_entry_header', 'genesis_post_info', 6 );
 
+//  displays the featured image
+add_action( 'genesis_entry_header', __NAMESPACE__ . '\featured_post_image', 12 );
+	function featured_post_image() {
+		the_post_thumbnail('portrait-image');
+	}
+
 // change les métas des articles
 add_filter( 'genesis_post_info', __NAMESPACE__ . '\change_infos');
   function change_infos ($infos_des_articles) {

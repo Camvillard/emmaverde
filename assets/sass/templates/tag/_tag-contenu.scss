@@ -3,62 +3,61 @@
 .tag {
 
   article {
-
-    @media only screen and (min-width: $screen-size--medium) {
-      @include grid-column(6);
-      padding: 10px 12px;
-
-      .entry-header {
-        .entry-meta {
-          text-align: center;
-          font-style: italic;
-          margin-bottom: 2%;
-        }
-
-        .entry-title {
-          @include rem( font-size, $category-title--font-size);
-        }
+  @include grid-column(12, $category-tags-template-grid);
+    .entry-header {
+      .entry-meta {
+      text-align: center;
+      font-style: italic;
+      margin-bottom: 2%;
       }
+      .entry-title {
+      @include rem( font-size, $category-title--font-size);
+      }
+    }
+  }
 
+  @media only screen and (min-width: $screen-size--medium) {
+    article {
+    @include grid-column(6, $category-tags-template-grid);
+    padding: 10px 12px;
       .entry-content {
-
         .more-link {
-          width: 100%;
-          border-bottom: $border--thin-pink;
+        width: 100%;
+        background: $rose-clair;
+        margin: 12px auto;
         }
-
         a.more-link {
-          text-decoration: none;
-          float: right;
-          font-weight: $more-link-archives--weight;
-          text-transform: uppercase;
-          @include rem( font-size, $more-link-archives--font-size);
-          color: $rose-principal;
-
+        text-decoration: none;
+        float: right;
+        font-weight: $more-link-archives--weight;
+        text-transform: uppercase;
+        @include rem( font-size, $more-link-archives--font-size);
+        color: $rose-principal;
           &:hover {
-            font-style: italic;
+          font-style: italic;
           }
         }
       }
 
       .entry-footer {
         .entry-meta {
-          border-top: none;
-          padding-top: 0px;
+        border: none;
+        padding-top: 0px;
         }
         .entry-tags{
-          text-align: left;
+        text-align: left;
         }
       }
-
     }
-
-    @media only screen and (min-width: $screen-size--large) {
-      @include grid-column(4);
-      padding: 10px 12px;
-
-    }
-
   }
 
+  @media only screen and (min-width: $screen-size--large) {
+  article {
+    @include grid-column(4, $category-tags-template-grid);
+    margin-bottom: 40px;
+      &:nth-of-type(3n+1) {
+      clear: left;
+      }
+    }
+  }
 }

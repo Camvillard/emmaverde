@@ -24,7 +24,7 @@
         .more-link {
         width: 100%;
         background: $rose-clair;
-        border-bottom: $border--thin-pink;
+        margin: 12px auto;
         }
         a.more-link {
         text-decoration: none;
@@ -50,18 +50,15 @@
       }
     }
   }
-}
 
-@media only screen and (min-width: $screen-size--large) {
-
-  .category {
-    article {
-      @include grid-column(4, $category-tags-template-grid);
-      margin-bottom: 40px;
-
-        &:nth-of-type(3n+1) {
-          clear: left;
-        }
+  @media only screen and (min-width: $screen-size--large) {
+  article {
+    @include grid-column(4, $category-tags-template-grid);
+    margin-bottom: 40px;
+      &:nth-of-type(3n+1) {
+      clear: left;
+      }
     }
   }
+
 }

@@ -12,19 +12,24 @@ padding: 22px 60px;
   margin: auto;
   }
   article {
+    .entry-title {
+    @include rem ( font-size, $widget-secondary--mobile--title-font-size);
+    line-height: 1.2;
+    text-align: center;
+    }
     .post-info {
     text-align: center;
     }
     a.more-link {
     display: block;
     clear: both;
-    text-align: left;
-    width: 100%;
+    text-align: right;
     text-transform: uppercase;
     color: $more-link-simple--color;
+    background: $rose-clair;
     float: right;
     text-decoration: none;
-    padding: 6px 0px;
+    padding: 6px 12px;
     margin: 24px auto 38px;
       &:hover {
       background: $more-link-simple--hover-background-color;
@@ -95,10 +100,6 @@ padding: 22px 60px;
       transform-origin: top left;
       font-style: italic;
       @include rem( font-size, $post-info--font-size );
-      }
-
-      a.more-link {
-      text-align: right;
       }
     }
   }
