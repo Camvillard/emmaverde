@@ -1,0 +1,110 @@
+/* 1. PREMIER TITRE
+----------------------------------- */
+
+//
+/* ----- a. front page : section principale ----- */
+//
+
+
+1. HTML RESET
+  a. baseline normalize
+  b. box sizing
+  c. float clearing
+
+2. DEFAULTS ELEMENTS
+  a. defaults
+  b. lists
+  c. blockquote
+  d. headings
+  e. objects
+  f. forms
+  g. gallery
+  h. tables
+  i. accessibility
+
+3. COMMON
+  a. aligns
+  b. audio-video
+
+4. STRUCTURE & LAYOUT
+  a. site containers
+  b. columns : widths & positions
+    - base
+    - content sidebar wrap
+    - content
+    - primary sidebar
+    - secondary sidebar
+  c. columns
+    - column-classes
+    - neat-columns
+    - full-width
+
+5. MODULES
+  a. site header
+    - base
+    - title area
+    - header right
+  b. site navigation
+    - base
+    - accessible-menu
+    - breadcrumbs
+    - site-header
+    - primary
+    - search-form
+    - secondary
+    - pagination
+    - site-footer
+    - js-enabled
+  c. content area
+    - base
+    - entry-meta
+    - entry-header
+    - entry-content
+    - entry-footer
+  d. comments
+    - base
+    - comment-author
+    - comment-list
+    - comment-header
+    - avatar
+    - comment-content
+    - respond
+  e. sidebars
+  f. footer
+    - widgets
+    - site footer
+
+6. TEMPLATES
+  a. front page
+    - front page : éléments communs
+    - front page : section principale
+    - front page : section lifestyle
+    - front page : section voyage
+    - front page : section lifestyle 2
+    - front page : section youtube
+  b. archives des catégories
+    - archives des categories : généralités
+    - archives des categories : contenu
+  c. archives des étiquettes
+    - archives des étiquettes : généralités
+    - archives des étiquettes : contenu
+  d. templates particuliers
+  e. template spécial : page contact
+  f. template spécial : page à propos
+
+7. COMPONENTS
+  a. avatar
+  b. skip-link
+  c. after-entry
+
+8. WIDGETS
+  a. widgets : base styling
+  b. search form
+  c. instagram feed
+  d. calendar widget
+
+9. PLUGINS
+  a. enews
+
+10. VIEWS
+  a. archives

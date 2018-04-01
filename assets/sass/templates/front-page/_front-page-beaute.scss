@@ -1,4 +1,4 @@
-/* ----- front page : section beauté ----- */
+/* ----- front page : section lifestyle 2 ----- */
 
 .front-page-beauty {
 padding: 22px 60px;
@@ -34,7 +34,7 @@ padding: 22px 60px;
   }
 
 
-  @media screen and (min-width: $screen-size--small) and (max-width: 1023px) {
+  @media only screen and (min-width: $screen-size--small) and (max-width: 1023px) {
     a.aligncenter{
       display: block;
       margin: 0 auto;
@@ -64,7 +64,7 @@ padding: 22px 60px;
   }
 
 
-  @media screen and (min-width: $screen-size--large) {
+  @media only screen and (min-width: $screen-size--large) {
     padding: 42px 100px;
     a.aligncenter{
       display: block;

@@ -1,4 +1,3 @@
-
 /* ----- front page : section principale ----- */
 
 .front-page-primary {
@@ -6,24 +5,23 @@ padding: 22px 60px;
 margin: 220px auto 30px;
 background: $rose-clair;
 
+.widget-title {
+display: none;
+}
+
   article {
   max-width: $max-width;
   margin: -160px auto 0px;
   background: none;
   }
 
-  .widget-title {
-  display: none;
-  }
-
-  .entry-title a{
-  @include rem( font-size, $widget-principal--mobile--title-font-size );
+  .entry-title {
   text-align: center;
-  margin-bottom: 46px;
+  text-transform: uppercase;
+  color: $gray;
+  line-height: normal;
+  @include rem( font-size, $widget-principal--mobile--title-font-size );
   font-weight: $font-weight--thick;
-    a:hover {
-    font-weight: $font-weight--normal;
-    }
   }
 
   .post-meta {
@@ -67,12 +65,29 @@ background: $rose-clair;
     border: $more-link-dark--hover-border;
     }
   }
+  @media only screen and (min-width: $screen-size--smallest) {
+    article {
+    position: relative;
+    z-index: 1000 !important;
+    }
+    .entry-title {
+    position: absolute;
+    top: 20%;
+    left: 14%;
+    padding: 6px;
+    width: 72%;
+    z-index: 1000;
+    border: $border--thick-gray;
+    background: $white;
+    }
+  }
 
-
-  @media screen and (min-width: $screen-size--medium) {
-  padding: 32px 80px;
+  @media only screen and (min-width: $screen-size--medium) {
   margin: 180px auto 30px;
-    .entry-title a{
+  padding: 32px 100px;
+
+    .entry-title {
+    top: 20%;
     @include rem( font-size, $widget-principal--tablet--title-font-size );
     }
     a.more-link {
@@ -82,10 +97,11 @@ background: $rose-clair;
     }
   }
 
-  @media screen and (min-width: $screen-size--large) {
-  padding: 42px 100px;
+  @media only screen and (min-width: $screen-size--large) {
+  padding: 42px 140px;
   margin: 180px auto 30px;
-    .entry-title a{
+    .entry-title {
+    top: 22%;
     @include rem( font-size, $widget-principal--desktop--title-font-size );
     }
     a.more-link {
@@ -93,20 +109,3 @@ background: $rose-clair;
     }
   }
 }
-
-
-
-
-/*p {
-  text-align: justify;
-  -moz-column-count: 2;
-  -moz-column-gap: 25px;
-  -webkit-column-count: 2;
-  -webkit-column-gap: 25px;
-  column-count: 2;
-  column-gap: 25px;
-  float: right;
-  max-width: 740px;
-  margin: auto;
-  clear: both;
-}*/

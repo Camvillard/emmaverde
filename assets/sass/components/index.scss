@@ -1,11 +1,8 @@
-//
-// Components
-//=======================
+/* 7. COMPONENTS
+----------------------------------- */
 
 @import "avatar";
-//@import "buttons";
-@import "accessibility/index";
+@import "skip-link";
 
-@import "after-entry/index";
-@import "author-box/index";
-//@import "to-top/index";
+@import "after-entry";
+//@import "author-box/index";

@@ -1,6 +1,4 @@
-//
-// Comment Respond
-//========================
+/* ----- comments : respond ----- */
 
 .comment-respond {
 
@@ -33,7 +31,7 @@
     border: none;
     margin-left: 0px;
     border-bottom: $border--thin-gray-light;
-    @include rem( font-size, $comments-placeholder--font-size);
+    @include rem( font-size, $comments-placeholder--mobile--font-size);
     color: $gray-light;
   }
 
@@ -44,7 +42,7 @@
     border: none;
     margin-right: 0px;
     border-bottom: $border--thin-gray-light;
-    @include rem( font-size, $comments-placeholder--font-size);
+    @include rem( font-size, $comments-placeholder--mobile--font-size);
     color: $gray-light;
   }
 
@@ -52,7 +50,57 @@
     width: 100%;
     border:none;
     border-bottom: $border--thin-gray-light;
-    @include rem( font-size, $comments-placeholder--font-size);
+    @include rem( font-size, $comments-placeholder--mobile--font-size);
     color: $gray-light;
   }
+
+  input[type="submit"] {
+    background-color: $button-light--background-color;
+    border: 0;
+    color: $button-light--color;
+    cursor: pointer;
+    @include rem( font-size, $button--mobile--font-size );
+    font-weight: 700;
+    padding: 16px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: normal;
+    width: auto;
+  }
+
+
+  @media only screen and (min-width: $screen-size--medium) {
+    .comment-form-comment {
+      label {
+      @include rem( font-size, $comments-placeholder--tablet--font-size);
+      }
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="url"]{
+    @include rem( font-size, $comments-placeholder--tablet--font-size);
+    }
+    input[type="submit"] {
+    @include rem( font-size, $comments-button--tablet--font-size );
+    }
+  }
+
+  @media only screen and (min-width: $screen-size--larger) {
+
+    .comment-form-comment {
+      label {
+      @include rem( font-size, $comments-placeholder--font-size);
+      }
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="url"] {
+    @include rem( font-size, $comments-placeholder--font-size);
+    }
+    input[type="submit"] {
+    @include rem( font-size, $comments-button--font-size );
+    }
+  }
+
+
 }

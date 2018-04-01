@@ -23,13 +23,11 @@
       .entry-content {
         .more-link {
         width: 100%;
-        //float: right;
         background: $rose-clair;
         border-bottom: $border--thin-pink;
         }
         a.more-link {
         text-decoration: none;
-        //padding: $more-link-archives--padding;
         float: right;
         font-weight: $more-link-archives--weight;
         text-transform: uppercase;

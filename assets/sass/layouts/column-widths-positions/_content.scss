@@ -1,14 +1,14 @@
-/* ### Content */
+/* -----content ----- */
 
 .content {
   float: right;
   width: $content--width;
 
-   @media screen and (max-width: 1340px) {
+   @media only screen and (max-width: 1340px) {
     width: $content--width-larger-screen;
   }
 
-   @media screen and (max-width: 1200px) {
+   @media only screen and (max-width: 1200px) {
     width: $content--width-large-screen;
   }
 
@@ -17,11 +17,11 @@
   .sidebar-sidebar-content & {
     width: $content-both-sidebars--width;
 
-     @media screen and (max-width: 1340px) {
+     @media only screen and (max-width: 1340px) {
       width: $content-both-sidebars--width-larger-screen;
     }
 
-     @media screen and (max-width: 1200px) {
+     @media only screen and (max-width: 1200px) {
       width: $content-both-sidebars--width-large-screen;
     }
   }

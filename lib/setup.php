@@ -144,3 +144,4 @@ function remove_genesis_page_templates( $page_templates ) {
 // Add Image Sizes.
 add_image_size( 'principal-image', 1400, 800, true );
 add_image_size( 'portrait-image', 680, 907, true );
+add_image_size( 'small-portrait-image', 310, 413, true );
